@@ -6,6 +6,7 @@ const links = [
   ['Kilimanjaro Treks', '/kilimanjaro-treks'],
   ['Gallery', '/gallery'],
   ['Zanzibar', '/zanzibar'],
+  ['Testimonials', '/testimonials'],
   ['Car Hire', '/car-hire'],
   ['Contact', '/contact'],
 ];
