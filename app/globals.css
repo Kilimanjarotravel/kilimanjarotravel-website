@@ -1,0 +1,4 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{scroll-behavior:smooth} body{color:#111;background:#fff}.hero-gradient{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.28))}.btn-gold{@apply inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 font-bold text-white shadow-lg transition hover:bg-forest}.btn-outline{@apply inline-flex items-center justify-center rounded-full border border-white/70 px-7 py-3 font-bold text-white transition hover:bg-white hover:text-forest}.card{@apply overflow-hidden rounded-3xl border border-black/5 bg-white shadow-xl}.section-title{@apply font-display text-4xl font-bold tracking-tight text-forest md:text-5xl}
