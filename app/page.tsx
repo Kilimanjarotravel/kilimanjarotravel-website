@@ -1,7 +1,15 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
-import { Car, Mountain, Palmtree, PawPrint, ShieldCheck, Star, Users } from 'lucide-react';
+import {
+  Car,
+  Mountain,
+  Palmtree,
+  PawPrint,
+  ShieldCheck,
+  Star,
+  Users,
+} from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -48,6 +56,7 @@ export default function Home() {
 
       <section className="relative min-h-screen bg-[url('/images/landcruiser.jpeg')] bg-cover bg-center">
         <div className="hero-gradient absolute inset-0" />
+
         <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-24 text-white">
           <p className="font-bold tracking-[.35em] text-gold">
             TANZANIA SAFARI SPECIALISTS
@@ -108,17 +117,17 @@ export default function Home() {
           </h2>
 
           <div className="mt-12 grid gap-7 md:grid-cols-4">
-            {services.map((s) => (
+            {services.map((service) => (
               <Link
-                href={s.href}
-                key={s.title}
+                href={service.href}
+                key={service.title}
                 className="card p-7 transition hover:-translate-y-1 hover:shadow-2xl"
               >
-                <s.icon className="h-11 w-11 text-gold" />
+                <service.icon className="h-11 w-11 text-gold" />
                 <h3 className="mt-5 text-xl font-bold text-forest">
-                  {s.title}
+                  {service.title}
                 </h3>
-                <p className="mt-3 leading-7 text-black/70">{s.text}</p>
+                <p className="mt-3 leading-7 text-black/70">{service.text}</p>
               </Link>
             ))}
           </div>
@@ -147,13 +156,13 @@ export default function Home() {
                 ['TALA Licensed Tour Operator', ShieldCheck],
                 ['Professional Guides & Safari Vehicles', Car],
                 ['Tailor-made Itineraries', Star],
-              ].map(([txt, Icon]: any) => (
+              ].map(([text, Icon]: any) => (
                 <div
-                  key={txt}
+                  key={text}
                   className="flex items-center gap-4 rounded-2xl bg-white/10 p-4"
                 >
                   <Icon className="text-gold" />
-                  <span className="font-semibold">{txt}</span>
+                  <span className="font-semibold">{text}</span>
                 </div>
               ))}
             </div>
@@ -181,6 +190,30 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="rounded-3xl bg-white p-8 text-center shadow-xl">
+            <h2 className="text-3xl font-bold text-forest">
+              ⭐ Trusted by Travelers Worldwide
+            </h2>
+
+            <p className="mt-4 text-lg text-gray-700">
+              Read genuine reviews from our happy guests on TripAdvisor and
+              discover why travelers choose Kilimanjaro Travel.
+            </p>
+
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g297913-d27540848-Reviews-Kilimanjaro_Travel-Arusha_Arusha_Region.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-semibold text-white"
+            >
+              ⭐ Read Our TripAdvisor Reviews
+            </a>
           </div>
         </div>
       </section>
