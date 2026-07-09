@@ -9,6 +9,7 @@ const links = [
   ['FAQ', '/faq'],
   ['Zanzibar', '/zanzibar'],
   ['Car Hire', '/car-hire'],
+  ['Booking', '/booking'],
   ['Contact', '/contact'],
 ];
 
