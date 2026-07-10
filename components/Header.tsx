@@ -4,6 +4,7 @@ const links = [
   ['About', '/about'],
   ['Safaris', '/safaris'],
   ['Kilimanjaro Treks', '/kilimanjaro-treks'],
+  ['Day Trips', '/day-trips'],
   ['Gallery', '/gallery'],
   ['Testimonials', '/testimonials'],
   ['FAQ', '/faq'],
