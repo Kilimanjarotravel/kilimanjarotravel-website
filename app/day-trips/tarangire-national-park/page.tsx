@@ -6,34 +6,34 @@ import Link from 'next/link';
 
 const itinerary = [
   {
-    time: '07:30',
+    time: '06:30',
     title: 'Hotel Pickup',
-    text: 'Pickup from your hotel in Arusha and drive to Arusha National Park.',
+    text: 'Pickup from your hotel in Arusha and begin the scenic drive to Tarangire National Park.',
   },
   {
-  time: '09:00',
-  title: 'Morning Game Drive',
-  text: 'Enjoy a morning game drive through the park in search of giraffes, buffaloes, zebras, monkeys and a variety of bird species.',
-},
-{
-  time: '11:00',
-  title: 'Optional Guided Walking Safari',
-  text: 'Guests who wish can enjoy an optional guided walking safari accompanied by an armed park ranger. This unique experience offers a closer connection with nature and an opportunity to learn about animal tracks, plants and the park’s ecosystem.',
-},
-{
-  time: '13:00',
-  title: 'Picnic Lunch',
-  text: 'Enjoy a delicious picnic lunch at a scenic picnic site inside the park.',
-},
-{
-  time: '14:00',
-  title: 'Momella Lakes Scenic Drive',
-  text: 'Continue exploring the beautiful Momella Lakes and enjoy spectacular views of Mount Meru before returning to Arusha.',
-},
+    time: '09:00',
+    title: 'Morning Game Drive',
+    text: 'Begin your game drive through Tarangire National Park, famous for large elephant herds, majestic baobab trees and diverse wildlife.',
+  },
+  {
+    time: '11:00',
+    title: 'Optional Guided Walking Safari',
+    text: 'Guests may request an optional guided walking safari with an armed park ranger in designated areas. This activity is subject to availability and park arrangements.',
+  },
+  {
+    time: '13:00',
+    title: 'Picnic Lunch',
+    text: 'Enjoy a picnic lunch at a scenic site inside the park while surrounded by the beautiful Tarangire landscape.',
+  },
+  {
+    time: '14:00',
+    title: 'Afternoon Game Drive',
+    text: 'Continue exploring the park in search of elephants, lions, giraffes, zebras, wildebeest, antelopes and abundant birdlife.',
+  },
   {
     time: '16:30',
     title: 'Return to Arusha',
-    text: 'Drive back to your hotel after an unforgettable day in the park.',
+    text: 'Leave Tarangire National Park and drive back to your hotel in Arusha after an unforgettable safari.',
   },
 ];
 
@@ -47,6 +47,7 @@ const included = [
 ];
 
 const excluded = [
+  'Optional walking safari fees',
   'Flights',
   'Travel insurance',
   'Tips and gratuities',
@@ -55,23 +56,23 @@ const excluded = [
 ];
 
 const whatToBring = [
-  'Comfortable walking shoes',
+  'Comfortable shoes',
   'Sun hat and sunscreen',
   'Camera or binoculars',
   'Light jacket',
   'Personal medication',
 ];
 
-export default function ArushaNationalParkPage() {
+export default function TarangireNationalParkPage() {
   return (
     <main>
       <Header />
       <WhatsApp />
 
       <PageHero
-        title="Arusha National Park Day Trip"
-        subtitle="Discover wildlife, Momella Lakes, Mount Meru views and beautiful landscapes in one unforgettable day."
-        image="/images/lion.jpeg"
+        title="Tarangire National Park Day Trip"
+        subtitle="Discover large elephant herds, ancient baobab trees and unforgettable wildlife in one remarkable day."
+        image="/images/landcruiser.jpeg"
       />
 
       <section className="py-20">
@@ -81,21 +82,22 @@ export default function ArushaNationalParkPage() {
               <p className="font-bold text-gold">TOUR OVERVIEW</p>
 
               <h2 className="section-title mt-3">
-                A Perfect Day Near Arusha
+                The Home of Elephants and Baobabs
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-black/70">
-                Arusha National Park is one of Tanzania&apos;s most beautiful
-                and accessible parks. It is famous for giraffes, buffaloes,
-                monkeys, Momella Lakes, green forests and spectacular views of
-                Mount Meru.
+                Tarangire National Park is famous for its large elephant
+                population, impressive baobab trees and beautiful landscapes.
+                The Tarangire River attracts many wildlife species, especially
+                during the dry season.
               </p>
 
               <p className="mt-4 text-lg leading-8 text-black/70">
-                This private day trip is ideal for travelers with limited time
-                who still want to enjoy wildlife, beautiful scenery and a
-                relaxed safari experience close to Arusha.
-                Optional activities such as a guided walking safari can be arranged upon request for guests who would like an even more immersive experience.
+                This private day trip gives you the opportunity to see
+                elephants, lions, giraffes, zebras, wildebeest, antelopes and
+                many bird species. An optional guided walking safari may be
+                arranged upon request, subject to availability and park
+                regulations.
               </p>
 
               <h2 className="mt-12 text-3xl font-bold text-forest">
@@ -192,7 +194,7 @@ export default function ArushaNationalParkPage() {
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
                 src="/images/safari-vehicle.jpeg"
-                alt="Safari vehicle in Tanzania"
+                alt="Safari vehicle in Tarangire National Park"
                 className="h-[420px] w-full object-cover"
               />
             </div>
@@ -201,7 +203,7 @@ export default function ArushaNationalParkPage() {
               <p className="font-bold text-gold">WHAT TO BRING</p>
 
               <h2 className="section-title mt-3">
-                Prepare for Your Day Trip
+                Prepare for Your Tarangire Safari
               </h2>
 
               <ul className="mt-6 space-y-3 text-lg">
@@ -217,12 +219,12 @@ export default function ArushaNationalParkPage() {
       <section className="bg-forest py-20 text-white">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="font-display text-4xl font-bold md:text-5xl">
-            Ready for Your Arusha National Park Adventure?
+            Ready for Your Tarangire Adventure?
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-white/80">
             Contact Kilimanjaro Travel today and receive a tailor-made
-            quotation for your private day trip.
+            quotation for your private Tarangire day trip.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
