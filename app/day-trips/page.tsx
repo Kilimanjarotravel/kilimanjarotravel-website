@@ -114,6 +114,8 @@ export default function DayTripsPage() {
       ? "/day-trips/ngorongoro-crater"
       : trip.title === "Lake Manyara National Park Day Trip"
 ? "/day-trips/lake-manyara-national-park"
+: trip.title === "Materuni Waterfalls & Coffee Tour"
+? "/day-trips/materuni-waterfalls-coffee-tour"
       : "/booking"
   }
   className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
