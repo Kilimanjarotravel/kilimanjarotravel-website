@@ -105,11 +105,17 @@ export default function DayTripsPage() {
                   </p>
 
                   <Link
-                    href="/booking"
-                    className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
-                  >
-                    Book This Day Trip
-                  </Link>
+  href={
+    trip.title === "Arusha National Park Day Trip"
+      ? "/day-trips/arusha-national-park"
+      : "/booking"
+  }
+  className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
+>
+  {trip.title === "Arusha National Park Day Trip"
+    ? "View Itinerary"
+    : "Book This Day Trip"}
+</Link>
                 </div>
               </div>
             ))}
