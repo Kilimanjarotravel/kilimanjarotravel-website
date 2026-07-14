@@ -83,12 +83,19 @@ itineraryReady: true,
 itineraryReady: true,
   },
   {
-    title: 'Arusha Bicycle Tour',
+    title: 'Tanzania Bicycle Tours',
     image: '/images/landcruiser.jpeg',
     text: 'Explore scenic neighborhoods, villages and local life around Arusha by bicycle.',
-    href: '/booking',
-    itineraryReady: false,
+    href: '/day-trips/tanzania-bicycle-tours',
+itineraryReady: true,
   },
+  {
+  title: 'Kilimanjaro Shira Plateau Day Hike',
+  image: '/images/landcruiser.jpeg',
+  text: 'Experience Mount Kilimanjaro on a guided high-altitude hike across the spectacular Shira Plateau.',
+  href: '/day-trips/kilimanjaro-shira-plateau-day-hike',
+  itineraryReady: true,
+},
 ];
 
 export default function DayTripsPage() {
