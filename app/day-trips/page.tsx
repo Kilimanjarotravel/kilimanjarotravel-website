@@ -44,8 +44,8 @@ const dayTrips = [
     title: 'Chemka Hot Springs',
     image: '/images/zanzibar.jpeg',
     text: 'Relax and swim in clear natural spring water surrounded by beautiful tropical scenery.',
-    href: '/booking',
-    itineraryReady: false,
+    href: '/day-trips/chemka-hot-springs',
+itineraryReady: true,
   },
   {
     title: 'Napuru Waterfalls & Hiking',
