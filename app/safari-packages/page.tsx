@@ -5,87 +5,112 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const packages = [
-  {
-    title: '2 Days Tarangire & Ngorongoro',
-    image: '/images/lion.jpeg',
-    description:
-      'Discover Tarangire National Park and the famous Ngorongoro Crater on this unforgettable 2-day safari.',
-    href: '/safari-packages/2-days-tarangire-ngorongoro',
-    ready: true,
-  },
-  {
-    title: '3 Days Serengeti & Ngorongoro',
-    image: '/images/safari-vehicle.jpeg',
-    description:
-      'Experience the endless plains of Serengeti and the spectacular Ngorongoro Crater.',
-    href: '/safari-packages/3-days-serengeti-ngorongoro',
-    ready: true,
-  },
-  {
-    title: '4 Days Tarangire, Serengeti & Ngorongoro',
-    image: '/images/landcruiser.jpeg',
-    description:
-      'Explore Tanzania’s most famous northern parks on a 4-day safari adventure.',
-    href: '/safari-packages/4-days-tarangire-serengeti-ngorongoro',
-    ready: true,
-  },
+{
+title: '2 Days Tarangire & Ngorongoro',
+image: '/images/lion.jpeg',
+description:
+'Discover Tarangire National Park and the famous Ngorongoro Crater on this unforgettable 2-day safari.',
+href: '/safari-packages/2-days-tarangire-ngorongoro',
+ready: true,
+badge: 'Best for Short Trips',
+badgeColor: 'bg-blue-600',
+price: '$650',
+},
+{
+title: '3 Days Serengeti & Ngorongoro',
+image: '/images/safari-vehicle.jpeg',
+description:
+'Experience the endless plains of Serengeti and the spectacular Ngorongoro Crater.',
+href: '/safari-packages/3-days-serengeti-ngorongoro',
+ready: true,
+badge: 'Most Popular',
+badgeColor: 'bg-red-600',
+price: '$950',
+},
+{
+title: '4 Days Tarangire, Serengeti & Ngorongoro',
+image: '/images/landcruiser.jpeg',
+description:
+'Explore Tanzania’s most famous northern parks on a 4-day safari adventure.',
+href: '/safari-packages/4-days-tarangire-serengeti-ngorongoro',
+ready: true,
+badge: 'Best Value',
+badgeColor: 'bg-green-600',
+price: '$1,250',
+},
 ];
 
 export default function SafariPackagesPage() {
-  return (
-    <main>
-      <Header />
-      <WhatsApp />
+return (
+<main>
+<Header />
+<WhatsApp />
 
-      <PageHero
-        title="Tanzania Safari Packages"
-        subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
-        image="/images/lion.jpeg"
-      />
+<PageHero
+title="Tanzania Safari Packages"
+subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
+image="/images/lion.jpeg"
+/>
 
-      <section className="py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.title}
-                className="overflow-hidden rounded-3xl bg-white shadow-xl"
-              >
-                <img
-                  src={pkg.image}
-                  alt={pkg.title}
-                  className="h-64 w-full object-cover"
-                />
+<section className="py-20">
+<div className="mx-auto max-w-7xl px-6">
+<div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+{packages.map((pkg) => (
+<div
+key={pkg.title}
+className="relative overflow-hidden rounded-3xl bg-white shadow-xl transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
+>
+<div
+className={`absolute left-4 top-4 z-10 ${pkg.badgeColor} rounded-full px-4 py-2 text-sm font-bold text-white shadow-lg`}
+>
+{pkg.badge}
+</div>
 
-                <div className="p-6">
-                  <h2 className="text-2xl font-bold text-forest">
-                    {pkg.title}
-                  </h2>
+<Link
+href={pkg.href}
+className="absolute right-4 top-4 z-10 rounded-full bg-white/80 backdrop-blur-sm px-4 py-2 text-sm font-bold text-forest shadow-lg transition hover:bg-gold hover:text-white"
+>
+View Details
+</Link>
 
-                  <p className="mt-4 text-black/70">
-                    {pkg.description}
-                  </p>
+<img
+src={pkg.image}
+alt={pkg.title}
+className="h-52 w-full object-cover"
+/>
 
-                  {pkg.ready ? (
-                    <Link
-                      href={pkg.href}
-                      className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
-                    >
-                      View Itinerary
-                    </Link>
-                  ) : (
-                    <span className="mt-6 inline-block rounded-full bg-gray-300 px-6 py-3 font-bold text-gray-700">
-                      Coming Soon
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+<div className="p-6">
+<h2 className="text-2xl font-bold text-forest">
+{pkg.title}
+</h2>
+<p className="mt-2 text-xl font-bold text-gold">
+  From {pkg.price} / person
+</p>
 
-      <Footer />
-    </main>
-  );
+<p className="mt-4 text-black/70">
+{pkg.description}
+</p>
+
+{pkg.ready ? (
+<Link
+href={pkg.href}
+className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
+>
+View Itinerary
+</Link>
+) : (
+<span className="mt-6 inline-block rounded-full bg-gray-300 px-6 py-3 font-bold text-gray-700">
+Coming Soon
+</span>
+)}
+</div>
+</div>
+))}
+</div>
+</div>
+</section>
+
+<Footer />
+</main>
+);
 }
