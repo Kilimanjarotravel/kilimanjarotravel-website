@@ -96,6 +96,20 @@ itineraryReady: true,
   href: '/day-trips/kilimanjaro-shira-plateau-day-hike',
   itineraryReady: true,
 },
+{
+  title: 'Mkomazi National Park Day Trip',
+  image: '/images/landcruiser.jpeg',
+  text: 'Explore dramatic landscapes, rich birdlife and important black rhino and wild dog conservation areas.',
+  href: '/day-trips/mkomazi-national-park',
+  itineraryReady: true,
+},
+{
+  title: 'Mikumi Safari from Zanzibar',
+  image: '/images/lion.jpeg',
+  text: 'Fly from Zanzibar for a full-day wildlife safari, 4x4 game drive and lunch in Mikumi National Park.',
+  href: '/day-trips/mikumi-from-zanzibar',
+  itineraryReady: true,
+},
 ];
 
 export default function DayTripsPage() {
