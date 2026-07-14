@@ -9,61 +9,85 @@ const dayTrips = [
     title: 'Arusha National Park Day Trip',
     image: '/images/lion.jpeg',
     text: 'Enjoy wildlife, Mount Meru views, scenic lakes and a beautiful day in Arusha National Park.',
+    href: '/day-trips/arusha-national-park',
+    itineraryReady: true,
   },
   {
     title: 'Tarangire National Park Day Trip',
     image: '/images/landcruiser.jpeg',
     text: 'See elephants, baobab trees and classic northern Tanzania wildlife in Tarangire.',
+    href: '/day-trips/tarangire-national-park',
+    itineraryReady: true,
   },
   {
     title: 'Ngorongoro Crater Day Trip',
     image: '/images/safari-vehicle.jpeg',
     text: 'Descend into the famous Ngorongoro Crater for an unforgettable wildlife experience.',
+    href: '/day-trips/ngorongoro-crater',
+    itineraryReady: true,
   },
   {
-    title: 'Lake Manyara Day Trip',
+    title: 'Lake Manyara National Park Day Trip',
     image: '/images/zanzibar.jpeg',
-    text: 'Discover forest scenery, birds, wildlife and the beautiful Lake Manyara landscape.',
+    text: 'Discover forest scenery, rich birdlife, wildlife and the beautiful Lake Manyara landscape.',
+    href: '/day-trips/lake-manyara-national-park',
+    itineraryReady: true,
   },
   {
     title: 'Materuni Waterfalls & Coffee Tour',
     image: '/images/fleet.jpeg',
     text: 'Hike to Materuni Waterfalls and learn how local Tanzanian coffee is grown and prepared.',
+    href: '/day-trips/materuni-waterfalls-coffee-tour',
+    itineraryReady: true,
   },
   {
     title: 'Chemka Hot Springs',
     image: '/images/zanzibar.jpeg',
     text: 'Relax and swim in clear natural spring water surrounded by beautiful tropical scenery.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Napuru Waterfalls & Hiking',
     image: '/images/lion.jpeg',
     text: 'Enjoy a guided hike, panoramic views of Arusha and Mount Meru, and a visit to Napuru Waterfalls.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Lake Duluti Canoeing',
     image: '/images/safari-vehicle.jpeg',
     text: 'Explore the peaceful lake by canoe and enjoy birds, nature and views of the surrounding forest.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Arusha Cultural & History Tour',
     image: '/images/logo.jpeg',
     text: 'Visit museums and cultural centers while learning about Tanzania’s heritage and local history.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Coffee Plantation Tour',
     image: '/images/fleet.jpeg',
     text: 'Visit a local coffee farm, learn the production process and taste fresh Tanzanian coffee.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Maasai Market & Local Handicrafts',
     image: '/images/logo.jpeg',
     text: 'Browse colorful crafts, paintings, souvenirs and handmade items from local artisans.',
+    href: '/booking',
+    itineraryReady: false,
   },
   {
     title: 'Arusha Bicycle Tour',
     image: '/images/landcruiser.jpeg',
     text: 'Explore scenic neighborhoods, villages and local life around Arusha by bicycle.',
+    href: '/booking',
+    itineraryReady: false,
   },
 ];
 
@@ -74,62 +98,79 @@ export default function DayTripsPage() {
       <WhatsApp />
 
       <PageHero
-        title="Day Trips & Local Tours"
-        subtitle="Discover wildlife, waterfalls, culture, coffee, local villages and unforgettable experiences around Arusha."
-        image="/images/landcruiser.jpeg"
+        title="Tanzania Day Trips"
+        subtitle="Discover wildlife, waterfalls, culture, coffee, hiking and unforgettable local experiences from Arusha."
+        image="/images/safari-vehicle.jpeg"
       />
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="section-title">Popular Day Trips</h2>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="font-bold text-gold">EXPLORE MORE</p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <h2 className="section-title mt-3">
+              Choose Your Perfect Day Trip
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-black/70">
+              Explore Tanzania with private day trips designed for wildlife,
+              nature, culture, adventure and authentic local experiences.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {dayTrips.map((trip) => (
-              <div
+              <article
                 key={trip.title}
-                className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
+                className="overflow-hidden rounded-3xl bg-white shadow-xl"
               >
                 <img
                   src={trip.image}
                   alt={trip.title}
-                  className="h-56 w-full object-cover"
+                  className="h-64 w-full object-cover"
                 />
 
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-forest">
+                <div className="p-7">
+                  <h2 className="text-2xl font-bold text-forest">
                     {trip.title}
-                  </h3>
+                  </h2>
 
                   <p className="mt-4 leading-7 text-black/70">
                     {trip.text}
                   </p>
 
                   <Link
-  href={
-    trip.title === "Arusha National Park Day Trip"
-      ? "/day-trips/arusha-national-park"
-      : trip.title === "Tarangire National Park Day Trip"
-      ? "/day-trips/tarangire-national-park"
-      : trip.title === "Ngorongoro Crater Day Trip"
-      ? "/day-trips/ngorongoro-crater"
-      : trip.title === "Lake Manyara National Park Day Trip"
-? "/day-trips/lake-manyara-national-park"
-: trip.title === "Materuni Waterfalls & Coffee Tour"
-? "/day-trips/materuni-waterfalls-coffee-tour"
-      : "/booking"
-  }
-  className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
->
-  {trip.title === "Arusha National Park Day Trip" ||
-  trip.title === "Tarangire National Park Day Trip" ||
-  trip.title === "Ngorongoro Crater Day Trip"
-    ? "View Itinerary"
-    : "Book This Day Trip"}
-</Link>
+                    href={trip.href}
+                    className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
+                  >
+                    {trip.itineraryReady
+                      ? 'View Itinerary'
+                      : 'Book This Day Trip'}
+                  </Link>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-forest py-20 text-white">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="font-display text-4xl font-bold md:text-5xl">
+            Need a Custom Day Trip?
+          </h2>
+
+          <p className="mt-5 text-lg leading-8 text-white/80">
+            Tell us what you would like to experience and our team will create
+            a private day trip based on your interests, schedule and budget.
+          </p>
+
+          <Link
+            href="/booking"
+            className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+          >
+            Request a Quote
+          </Link>
         </div>
       </section>
 
