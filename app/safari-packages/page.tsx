@@ -27,7 +27,7 @@ const packages = [
     description:
       'Explore Tanzania’s most famous northern parks on a 4-day safari adventure.',
     href: '/safari-packages/4-days-tarangire-serengeti-ngorongoro',
-    ready: false,
+    ready: true,
   },
 ];
 
