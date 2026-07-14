@@ -19,7 +19,7 @@ const packages = [
     description:
       'Experience the endless plains of Serengeti and the spectacular Ngorongoro Crater.',
     href: '/safari-packages/3-days-serengeti-ngorongoro',
-    ready: false,
+    ready: true,
   },
   {
     title: '4 Days Tarangire, Serengeti & Ngorongoro',
