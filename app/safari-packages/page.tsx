@@ -49,6 +49,17 @@ badge: 'Recommended',
 badgeColor: 'bg-purple-600',
 price: '$1,520',
 },
+{
+  title: '6 Days Northern Circuit Safari',
+  image: '/images/landcruiser.jpeg',
+  description:
+    'Discover Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete six-day private safari.',
+  href: '/safari-packages/6-days-northern-circuit',
+  ready: true,
+  badge: 'Premium Choice',
+  badgeColor: 'bg-forest',
+  price: '$1,780',
+},
 ];
 
 export default function SafariPackagesPage() {
@@ -85,9 +96,9 @@ View Details
 </Link>
 
 <img
-src={pkg.image}
-alt={pkg.title}
-className="h-52 w-full object-cover"
+  src={pkg.image}
+  alt={pkg.title}
+  className="h-64 w-full object-cover"
 />
 
 <div className="p-6">
