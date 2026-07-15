@@ -38,6 +38,17 @@ badge: 'Best Value',
 badgeColor: 'bg-green-600',
 price: '$1,250',
 },
+{
+title: '5 Days Northern Circuit Safari',
+image: '/images/safari-vehicle.jpeg',
+description:
+'Explore Tarangire, Serengeti and Ngorongoro on a rewarding five-day private safari.',
+href: '/safari-packages/5-days-northern-circuit',
+ready: true,
+badge: 'Recommended',
+badgeColor: 'bg-purple-600',
+price: '$1,520',
+},
 ];
 
 export default function SafariPackagesPage() {
