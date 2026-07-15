@@ -50,7 +50,7 @@ export default function Safaris() {
                   </p>
 
                   <Link
-                    href="/contact"
+                    href="/booking"
                     className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
                   >
                     Book This Safari
