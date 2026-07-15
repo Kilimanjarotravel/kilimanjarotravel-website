@@ -71,6 +71,17 @@ price: '$1,520',
   badgeColor: 'bg-gold',
   price: '$2,040',
 },
+{
+  title: '8 Days Northern Circuit Safari',
+  image: '/images/lion.jpeg',
+  description:
+    'Experience the ultimate Northern Circuit adventure through Tarangire, Lake Manyara, Serengeti and Ngorongoro with an extra day for wildlife viewing.',
+  href: '/safari-packages/8-days-northern-circuit',
+  ready: true,
+  badge: 'Ultimate Safari',
+  badgeColor: 'bg-purple-600',
+  price: '$2,320',
+},
 ];
 
 export default function SafariPackagesPage() {
