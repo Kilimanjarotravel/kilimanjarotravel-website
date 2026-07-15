@@ -60,6 +60,17 @@ price: '$1,520',
   badgeColor: 'bg-forest',
   price: '$1,780',
 },
+{
+  title: '7 Days Northern Circuit Safari',
+  image: '/images/lion.jpeg',
+  description:
+    'Enjoy Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete seven-day private safari.',
+  href: '/safari-packages/7-days-northern-circuit',
+  ready: true,
+  badge: 'Top Seller',
+  badgeColor: 'bg-gold',
+  price: '$2,040',
+},
 ];
 
 export default function SafariPackagesPage() {
