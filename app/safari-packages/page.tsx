@@ -93,6 +93,17 @@ price: '$1,520',
   badgeColor: 'bg-orange-600',
   price: '$2,580',
 },
+{
+  title: '10 Days Northern Circuit Safari',
+  image: '/images/landcruiser.jpeg',
+  description:
+    'Explore Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete ten-day private safari.',
+  href: '/safari-packages/10-days-northern-circuit',
+  ready: true,
+  badge: 'Ultimate Journey',
+  badgeColor: 'bg-indigo-600',
+  price: '$2,850',
+},
 ];
 
 export default function SafariPackagesPage() {
