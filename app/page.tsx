@@ -40,12 +40,36 @@ const services = [
 ];
 
 const experiences = [
-  ['3 Days Serengeti & Ngorongoro', '/images/lion.jpeg'],
-  ['5 Days Northern Tanzania Safari', '/images/landcruiser.jpeg'],
-  ['7 Days Great Migration Safari', '/images/safari-vehicle.jpeg'],
-  ['6 Days Machame Route', '/images/fleet.jpeg'],
-  ['8 Days Lemosho Route', '/images/landcruiser.jpeg'],
-  ['5 Days Zanzibar Holiday', '/images/zanzibar.jpeg'],
+  [
+    '3 Days Serengeti & Ngorongoro',
+    '/images/lion.jpeg',
+    '/safari-packages/3-days-serengeti-ngorongoro',
+  ],
+  [
+    '5 Days Northern Tanzania Safari',
+    '/images/landcruiser.jpeg',
+    '/safari-packages/5-days-northern-circuit',
+  ],
+  [
+    '7 Days Great Migration Safari',
+    '/images/safari-vehicle.jpeg',
+    '/safari-packages/7-days-northern-circuit',
+  ],
+  [
+    '6 Days Machame Route',
+    '/images/fleet.jpeg',
+    '/kilimanjaro-treks',
+  ],
+  [
+    '8 Days Lemosho Route',
+    '/images/landcruiser.jpeg',
+    '/kilimanjaro-treks',
+  ],
+  [
+    '5 Days Zanzibar Holiday',
+    '/images/zanzibar.jpeg',
+    '/zanzibar',
+  ],
 ];
 
 export default function Home() {
@@ -175,21 +199,23 @@ export default function Home() {
           <h2 className="section-title">Popular Experiences</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {experiences.map(([title, image]) => (
-              <div
-                key={title}
-                className="overflow-hidden rounded-3xl bg-cream shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
-              >
-                <img
-                  src={image}
-                  alt={title}
-                  className="h-56 w-full object-cover"
-                />
-                <div className="p-6 text-xl font-bold text-forest">
-                  {title}
-                </div>
-              </div>
-            ))}
+            {experiences.map(([title, image, href]) => (
+  <Link
+    href={href}
+    key={title}
+    className="block overflow-hidden rounded-3xl bg-cream shadow..."
+  >
+    <img
+      src={image}
+      alt={title}
+      className="h-56 w-full object-cover"
+    />
+
+    <div>
+      <h3>{title}</h3>
+    </div>
+  </Link>
+))}
           </div>
         </div>
       </section>

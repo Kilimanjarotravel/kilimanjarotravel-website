@@ -9,8 +9,26 @@ const packages = [
   ['Mid-range Safaris', '/images/landcruiser.jpeg'],
   ['Budget Camping Safaris', '/images/safari-vehicle.jpeg'],
   ['Family Safaris', '/images/fleet.jpeg'],
-  ['Honeymoon Safaris', '/images/zanzibar.jpeg'],
-  ['Great Migration Safaris', '/images/lion.jpeg'],
+  [
+  'Honeymoon Safaris',
+  '/images/zanzibar.jpeg',
+  '/safaris/honeymoon'
+],
+  [
+  'Mara River Crossing Safari',
+  '/images/lion.jpeg',
+  '/safaris/mara-river-crossing',
+],
+[
+  'Ndutu Migration Safari',
+  '/images/lion.jpeg',
+  '/safaris/ndutu-migration'
+],
+[
+  'Southern Circuit Safari',
+  '/images/safari-vehicle.jpeg',
+  '/safaris/southern-circuit'
+],
 ];
 
 export default function Safaris() {
@@ -20,17 +38,17 @@ export default function Safaris() {
       <WhatsApp />
 
       <PageHero
-        title="Tanzania Wildlife Safaris"
-        subtitle="Discover Serengeti, Ngorongoro, Tarangire, Lake Manyara and the Big Five."
-        image="/images/lion.jpeg"
-      />
+  title="Tanzania Safari Experiences"
+  subtitle="Discover unforgettable wildlife safaris, mountain adventures, cultural tours, waterfalls, hot springs, and beach holidays across Tanzania."
+  image="/images/lion.jpeg"
+/>
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="section-title">Safari Packages</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {packages.map(([title, image]) => (
+            {packages.map(([title, image, href]) => (
               <div
                 className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
                 key={title}
@@ -50,7 +68,7 @@ export default function Safaris() {
                   </p>
 
                   <Link
-                    href="/booking"
+                    href={href || '/booking'}
                     className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
                   >
                     Book This Safari
