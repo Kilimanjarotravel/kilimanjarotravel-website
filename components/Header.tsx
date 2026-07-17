@@ -4,6 +4,8 @@ const links = [
   ['About', '/about'],
   ['Safaris', '/safaris'],
   ['Kilimanjaro Treks', '/kilimanjaro-treks'],
+  ['Mountain Adventures', '/mountain-adventures'],
+['Cultural Tours', '/cultural-tours'],
   ['Day Trips', '/day-trips'],
   ['Gallery', '/gallery'],
   ['Testimonials', '/testimonials'],
@@ -18,9 +20,13 @@ export default function Header() {
   return (
     <header className="fixed left-0 top-0 z-50 w-full bg-black/45 text-white backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <Link href="/" className="font-display text-xl font-bold tracking-wide">
-          KILIMANJARO <span className="text-gold">TRAVEL</span>
-        </Link>
+        <Link href="/" className="block">
+  <img
+    src="/images/logo.png"
+    alt="Kilimanjaro Travel"
+    className="h-16 w-auto object-contain"
+  />
+</Link>
 
         <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
           {links.map(([label, href]) => (

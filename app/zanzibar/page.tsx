@@ -5,15 +5,39 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const trips = [
-  ['Zanzibar Beach Holiday', '/images/zanzibar.jpeg'],
-  ['Stone Town & Spice Tour', '/images/zanzibar.jpeg'],
-  ['Dolphin Tour', '/images/zanzibar.jpeg'],
-  ['Mnemba Snorkeling', '/images/zanzibar.jpeg'],
-  ['Spice Farm Tour', '/images/zanzibar.jpeg'],
-  ['Honeymoon Package', '/images/zanzibar.jpeg'],
+  [
+    'Zanzibar Beach Holiday',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/beach-holiday',
+  ],
+  [
+    'Stone Town & Spice Tour',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/stone-town-spice-tour',
+  ],
+  [
+    'Dolphin Tour',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/dolphin-tour',
+  ],
+  [
+    'Mnemba Snorkeling',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/mnemba-snorkeling',
+  ],
+  [
+    'Spice Farm Tour',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/spice-farm-tour',
+  ],
+  [
+    'Honeymoon Package',
+    '/images/zanzibar.jpeg',
+    '/zanzibar/honeymoon-package',
+  ],
 ];
 
-export default function Zanzibar() {
+export default function ZanzibarPage() {
   return (
     <main>
       <Header />
@@ -30,11 +54,11 @@ export default function Zanzibar() {
           <h2 className="section-title">Beach & Island Experiences</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {trips.map(([title, image]) => (
-              <div
-                key={title}
-                className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
-              >
+  {trips.map(([title, image, href]) => (
+    <div
+      key={title}
+      className="overflow-hidden rounded-3xl bg-white"
+    >
                 <img src={image} alt={title} className="h-56 w-full object-cover" />
 
                 <div className="p-8">
@@ -45,11 +69,11 @@ export default function Zanzibar() {
                   </p>
 
                   <Link
-                    href="/contact"
-                    className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
-                  >
-                    Book This Tour
-                  </Link>
+  href={href || '/booking'}
+  className="mt-6 inline-block rounded-full bg-yellow-500 px-6 py-3 font-bold text-white transition hover:bg-yellow-600"
+>
+  View Zanzibar Experience
+</Link>
                 </div>
               </div>
             ))}
