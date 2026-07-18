@@ -5,10 +5,26 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const packages = [
-  ['Luxury Safaris', '/images/lion.jpeg'],
-  ['Mid-range Safaris', '/images/landcruiser.jpeg'],
-  ['Budget Camping Safaris', '/images/safari-vehicle.jpeg'],
-  ['Family Safaris', '/images/fleet.jpeg'],
+  [
+  'Luxury Safaris',
+  '/images/lion.jpeg',
+  '/safaris/luxury-safaris',
+],
+  [
+  'Mid-range Safaris',
+  '/images/landcruiser.jpeg',
+  '/safaris/mid-range-safaris',
+],
+  [
+  'Budget Camping Safaris',
+  '/images/safari-vehicle.jpeg',
+  '/safaris/budget-camping-safaris',
+],
+  [
+  'Family Safaris',
+  '/images/landcruiser.jpeg',
+  '/safaris/family-safaris',
+],
   [
   'Honeymoon Safaris',
   '/images/zanzibar.jpeg',
@@ -45,7 +61,7 @@ export default function Safaris() {
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="section-title">Safari Packages</h2>
+          <h2 className="section-title">Special Safaris</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {packages.map(([title, image, href]) => (

@@ -5,12 +5,55 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const routes = [
-  ['Machame Route', '6–7 Days', 'Moderate to challenging', '/images/landcruiser.jpeg'],
-  ['Lemosho Route', '7–8 Days', 'Scenic and highly recommended', '/images/lion.jpeg'],
-  ['Marangu Route', '5–6 Days', 'Hut accommodation route', '/images/fleet.jpeg'],
-  ['Rongai Route', '6–7 Days', 'Quiet northern approach', '/images/safari-vehicle.jpeg'],
-  ['Northern Circuit', '8–9 Days', 'Longest and most scenic route', '/images/zanzibar.jpeg'],
-  ['Mount Meru', '3–4 Days', 'Great acclimatization climb', '/images/landcruiser.jpeg'],
+  [
+    'Machame Route',
+    '6–7 Days',
+    'Moderate to challenging',
+    '/images/landcruiser.jpeg',
+    '/kilimanjaro-treks/machame-route',
+  ],
+  [
+    'Lemosho Route',
+    '7–8 Days',
+    'Scenic and highly recommended',
+    '/images/lion.jpeg',
+    '/kilimanjaro-treks/lemosho-route',
+  ],
+  [
+    'Marangu Route',
+    '5–6 Days',
+    'Hut accommodation route',
+    '/images/fleet.jpeg',
+    '/kilimanjaro-treks/marangu-route',
+  ],
+  [
+    'Rongai Route',
+    '6–7 Days',
+    'Quiet northern approach',
+    '/images/safari-vehicle.jpeg',
+    '/kilimanjaro-treks/rongai-route',
+  ],
+  [
+    'Northern Circuit',
+    '8–9 Days',
+    'Longest and most scenic route',
+    '/images/zanzibar.jpeg',
+    '/kilimanjaro-treks/northern-circuit-route',
+  ],
+  [
+  'Umbwe Route',
+  '6–7 Days',
+  'Steep and challenging route',
+  '/images/landcruiser.jpeg',
+  '/kilimanjaro-treks/umbwe-route',
+],
+[
+  'Shira Route',
+  '7–8 Days',
+  'Scenic western approach',
+  '/images/lion.jpeg',
+  '/kilimanjaro-treks/shira-route',
+],
 ];
 
 export default function Treks() {
@@ -30,16 +73,16 @@ export default function Treks() {
           <h2 className="section-title">Popular Routes</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {routes.map(([title, days, difficulty, image]) => (
+            {routes.map(([title, days, difficulty, image, href]) => (
               <div
                 key={title}
                 className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
               >
                 <img
-                  src={image}
-                  alt={title}
-                  className="h-56 w-full object-cover"
-                />
+  src={image}
+  alt={title}
+  className="h-56 w-full object-cover"
+/>
 
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-forest">{title}</h3>
@@ -51,12 +94,12 @@ export default function Treks() {
                     park fees, transfers and full mountain support team.
                   </p>
 
-                  <Link
-                    href="/contact"
-                    className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
-                  >
-                    Book This Trek
-                  </Link>
+                 <Link
+  href={href || '/booking'}
+  className="mt-6 inline-block rounded-full bg-yellow-500 px-6 py-3 font-bold text-white transition hover:bg-yellow-600"
+>
+  View Route
+</Link>
                 </div>
               </div>
             ))}

@@ -2,7 +2,8 @@ import Link from 'next/link';
 
 const links = [
   ['About', '/about'],
-  ['Safaris', '/safaris'],
+  ['Safari Packages', '/safari-packages'],
+['Special Safaris', '/safaris'],
   ['Kilimanjaro Treks', '/kilimanjaro-treks'],
   ['Mountain Adventures', '/mountain-adventures'],
 ['Cultural Tours', '/cultural-tours'],
@@ -18,31 +19,35 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="fixed left-0 top-0 z-50 w-full bg-black/45 text-white backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <Link href="/" className="block">
-  <img
-    src="/images/logo.png"
-    alt="Kilimanjaro Travel"
-    className="h-16 w-auto object-contain"
-  />
-</Link>
+    <header className="fixed left-0 top-0 z-50 w-full bg-forest shadow-lg">
+  <div className="flex w-full items-center gap-3 px-4 py-2">
+    <Link href="/" className="shrink-0">
+      <img
+        src="/images/logo.png"
+        alt="Kilimanjaro Travel"
+        className="h-14 w-auto object-contain"
+      />
+    </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
-          {links.map(([label, href]) => (
-            <Link key={href} href={href} className="hover:text-gold">
-              {label}
-            </Link>
-          ))}
-        </nav>
-
-        <a
-          className="rounded-full bg-gold px-5 py-2 text-sm font-bold"
-          href="https://wa.me/255759273339"
+    <nav className="hidden flex-1 items-center justify-end gap-4 text-xs font-semibold text-white lg:flex">
+      {links.map(([label, href]) => (
+        <Link
+          key={href}
+          href={href}
+          className="text-white transition hover:text-gold"
         >
-          WhatsApp
-        </a>
-      </div>
-    </header>
+          {label}
+        </Link>
+      ))}
+
+      <a
+        href="https://wa.me/255759273339"
+        className="rounded-full bg-gold px-3 py-2 font-bold text-white"
+      >
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
   );
 }
