@@ -1,6 +1,11 @@
+import Header from '@/components/Header';
+
 export default function GalleryPage() {
   return (
-    <main className="min-h-screen bg-white py-16">
+    <main className="min-h-screen bg-white pt-24 pb-16">
+  <Header />
+
+  <div className="mx-auto max-w-7xl px-6"></div>
       <div className="mx-auto max-w-7xl px-6">
         <h1 className="mb-4 text-center text-4xl font-bold">
           Gallery

@@ -1,51 +1,51 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
-const testimonials = [
-  {
-    name: "John & Sarah",
-    country: "USA",
-    text: "Our Tanzania safari was unforgettable. The guide was professional, the vehicle was comfortable, and everything was well organized.",
-  },
-  {
-    name: "Michael",
-    country: "UK",
-    text: "Climbing Mount Kilimanjaro with Kilimanjaro Travel was one of the best experiences of my life.",
-  },
-  {
-    name: "Emma",
-    country: "Australia",
-    text: "From safari to Zanzibar, everything was perfectly planned. We felt safe, welcomed and well cared for.",
-  },
-];
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function TestimonialsPage() {
   return (
     <>
       <Header />
 
-      <main className="mx-auto max-w-7xl px-6 py-24">
-        <h1 className="text-center text-5xl font-bold text-forest">
-          Guest Reviews
-        </h1>
+      <main className="min-h-screen bg-white pt-24 pb-16">
+        <section className="py-16">
+          <div className="mx-auto max-w-4xl px-6 text-center">
+            <p className="font-bold uppercase tracking-widest text-gold">
+              Genuine Guest Experiences
+            </p>
 
-        <p className="mx-auto mt-4 max-w-3xl text-center text-lg text-gray-600">
-          Read what travelers say about their Tanzania safaris, Kilimanjaro treks
-          and Zanzibar holidays with Kilimanjaro Travel.
-        </p>
+            <h1 className="mt-3 text-4xl font-bold text-forest md:text-5xl">
+              Guest Reviews
+            </h1>
 
-        <div className="mt-12 grid gap-7 md:grid-cols-3">
-          {testimonials.map((review) => (
-            <div key={review.name} className="rounded-3xl bg-white p-8 shadow-xl">
-              <div className="text-2xl text-gold">★★★★★</div>
-              <p className="mt-5 text-gray-700">“{review.text}”</p>
-              <h2 className="mt-6 text-xl font-bold text-forest">
-                {review.name}
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+              Read genuine guest reviews and travel experiences from customers
+              who explored Tanzania with Kilimanjaro Travel.
+            </p>
+
+            <div className="mx-auto mt-10 max-w-2xl rounded-3xl bg-cream p-8 shadow-xl">
+              <div className="text-3xl text-gold">★★★★★</div>
+
+              <h2 className="mt-5 text-2xl font-bold text-forest">
+                Read Our TripAdvisor Reviews
               </h2>
-              <p className="text-gray-500">{review.country}</p>
+
+              <p className="mt-4 leading-7 text-gray-600">
+                Visit our official TripAdvisor page to read verified reviews
+                and see what travelers say about their safari, Kilimanjaro, and
+                Tanzania experiences.
+              </p>
+
+              <a
+                href="https://www.tripadvisor.com/Attraction_Review-g297913-d27540848-Reviews-Kilimanjaro_Travel-Arusha_Arusha_Region.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white transition hover:opacity-90"
+              >
+                View Reviews on TripAdvisor
+              </a>
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
