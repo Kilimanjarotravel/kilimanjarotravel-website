@@ -45,6 +45,11 @@ const packages = [
   '/images/southern.jpg',
   '/safaris/southern-circuit'
 ],
+[
+  'Mkomazi Rhino Safari',
+  '/images/mkomazi-safari.jpg',
+  '/safaris/mkomazi-rhino-safari',
+],
 ];
 
 export default function Safaris() {
