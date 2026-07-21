@@ -78,8 +78,8 @@ export default function Home() {
       <Header />
       <WhatsApp />
 
-      <section className="relative min-h-screen bg-[url('/images/landcruiser.jpeg')] bg-cover bg-center">
-        <div className="hero-gradient absolute inset-0" />
+      <section className="relative min-h-[680px] bg-[url('/images/home-main.jpg')] bg-contain bg-top bg-no-repeat md:min-h-screen md:bg-cover md:bg-center">
+        <div className="absolute inset-0 bg-black/20" />
 
         <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-24 text-white">
           <p className="font-bold tracking-[.35em] text-gold">
@@ -125,8 +125,8 @@ export default function Home() {
 
           <div className="card overflow-hidden">
             <img
-              src="/images/safari-vehicle.jpeg"
-              className="h-[430px] w-full object-cover"
+              src="/images/home-hero.jpeg"
+              className="h-[320px] w-full object-cover md:h-[430px]"
               alt="Kilimanjaro Travel safari vehicle"
             />
           </div>
