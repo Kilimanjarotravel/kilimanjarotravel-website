@@ -7,42 +7,42 @@ import Link from 'next/link';
 const packages = [
   [
   'Luxury Safaris',
-  '/images/lion.jpeg',
+  '/images/luxury-safarii.jpg',
   '/safaris/luxury-safaris',
 ],
   [
   'Mid-range Safaris',
-  '/images/landcruiser.jpeg',
+  '/images/mid-range.jpg',
   '/safaris/mid-range-safaris',
 ],
   [
   'Budget Camping Safaris',
-  '/images/safari-vehicle.jpeg',
+  '/images/budget-safari.jpg',
   '/safaris/budget-camping-safaris',
 ],
   [
   'Family Safaris',
-  '/images/landcruiser.jpeg',
+  '/images/family-safari.jpg',
   '/safaris/family-safaris',
 ],
   [
   'Honeymoon Safaris',
-  '/images/zanzibar.jpeg',
+  '/images/honeymoon-safari.jpg',
   '/safaris/honeymoon'
 ],
   [
   'Mara River Crossing Safari',
-  '/images/lion.jpeg',
+  '/images/mara-safari.jpeg',
   '/safaris/mara-river-crossing',
 ],
 [
   'Ndutu Migration Safari',
-  '/images/lion.jpeg',
+  '/images/ndutu-safari.jpg',
   '/safaris/ndutu-migration'
 ],
 [
   'Southern Circuit Safari',
-  '/images/safari-vehicle.jpeg',
+  '/images/southern.jpg',
   '/safaris/southern-circuit'
 ],
 ];
@@ -70,10 +70,10 @@ export default function Safaris() {
                 key={title}
               >
                 <img
-                  src={image}
-                  alt={title}
-                  className="h-56 w-full object-cover"
-                />
+  src={image}
+  alt={title}
+  className="h-64 w-full object-cover object-center"
+/>
 
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-forest">{title}</h3>
