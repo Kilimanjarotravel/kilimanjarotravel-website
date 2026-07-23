@@ -46,9 +46,24 @@ const packages = [
   '/safaris/southern-circuit'
 ],
 [
+  'Kenya & Tanzania Combined Safari',
+  '/images/kenya-tanzania.jpg',
+  '/safaris/kenya-tanzania-safari',
+],
+[
   'Mkomazi Rhino Safari',
   '/images/mkomazi-safari.jpg',
   '/safaris/mkomazi-rhino-safari',
+],
+[
+  'Usambara Mountains & Cultural Safari',
+  '/images/usambara-safari.jpg',
+  '/safaris/usambara-mountains-safari',
+],
+[
+  'Marine Safari, Snorkeling & Diving',
+  '/images/marine-safari.jpg',
+  '/safaris/marine-safari',
 ],
 ];
 
@@ -89,11 +104,11 @@ export default function Safaris() {
                   </p>
 
                   <Link
-                    href={href || '/booking'}
-                    className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
-                  >
-                    Book This Safari
-                  </Link>
+  href={href || '/booking'}
+  className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
+>
+  Explore Adventure
+</Link>
                 </div>
               </div>
             ))}
