@@ -5,36 +5,48 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const packages = [
-  [
-    'Maasai Village Experience',
-    '/images/lion.jpeg',
-    '/cultural-tours/maasai-village',
-  ],
-  [
-    'Chagga Cultural Tour',
-    '/images/fleet.jpeg',
-    '/cultural-tours/chagga-cultural-tour',
-  ],
-  [
-  'Pare Cultural Tour',
-  '/images/fleet.jpeg',
-  '/cultural-tours/pare-cultural-tour',
-],
-[
-  'Sambaa Cultural Tour',
-  '/images/lion.jpeg',
-  '/cultural-tours/sambaa-cultural-tour',
-],
- [
-    'Hadzabe & Datoga Cultural Tour',
-    '/images/landcruiser.jpeg',
-    '/cultural-tours/hadzabe-datoga',
-  ],
-  [
-  'Mto wa Mbu Cultural Tour',
-  '/images/zanzibar.jpeg',
-  '/cultural-tours/mto-wa-mbu',
-],
+  {
+    title: "Maasai Village Experience",
+    image: "/images/maasai-moja.jpg",
+    href: "/cultural-tours/maasai-village",
+    description:
+      "Visit a traditional Maasai community, learn about local customs, join cultural activities, and experience authentic village life.",
+  },
+  {
+    title: "Chagga Cultural Tour",
+    image: "/images/chaga-moja.jpeg",
+    href: "/cultural-tours/chagga-cultural-tour",
+    description:
+      "Explore Chagga history, traditional homes, coffee farms, waterfalls, and the rich culture found around Mount Kilimanjaro.",
+  },
+  {
+    title: "Pare Cultural Tour",
+    image: "/images/pare-moja.jpg/",
+    href: "/cultural-tours/pare-cultural-tour",
+    description:
+      "Discover the scenic Pare Mountains, historic villages, local farming traditions, and welcoming community experiences.",
+  },
+  {
+    title: "Sambaa Cultural Tour",
+    image: "/images/lion.jpeg",
+    href: "/cultural-tours/sambaa-cultural-tour",
+    description:
+      "Experience Sambaa traditions, mountain villages, local markets, storytelling, and beautiful landscapes in the Usambara region.",
+  },
+  {
+    title: "Hadzabe & Datoga Cultural Tour",
+    image: "/images/landcruiser.jpeg",
+    href: "/cultural-tours/hadzabe-datoga",
+    description:
+      "Meet the Hadzabe hunter-gatherers and Datoga artisans near Lake Eyasi while learning about their unique ways of life.",
+  },
+  {
+    title: "Mto wa Mbu Cultural Tour",
+    image: "/images/zanzibar.jpeg",
+    href: "/cultural-tours/mto-wa-mbu",
+    description:
+      "Walk through a vibrant multicultural village, visit farms and workshops, taste local food, and meet community members.",
+  },
 ];
 export default function CulturalTours() {
   return (
@@ -45,7 +57,7 @@ export default function CulturalTours() {
       <PageHero
   title="Tanzania Cultural Tours"
   subtitle="Meet local communities, discover traditional lifestyles, explore villages, and experience the rich cultures of Tanzania."
-  image="/images/lion.jpeg"
+  image="/images/maasai-mbili.jpg"
 />
 
       <section className="py-20">
@@ -53,7 +65,7 @@ export default function CulturalTours() {
           <h2 className="section-title">Cultural Tour Experiences</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {packages.map(([title, image, href], index) => (
+            {packages.map(({ title, image, href, description }, index) => (
               <div
                 className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
                 key={`${title}-${index}`}
@@ -68,14 +80,14 @@ export default function CulturalTours() {
                   <h3 className="text-2xl font-bold text-forest">{title}</h3>
 
                   <p className="mt-4 leading-7 text-black/70">
-                    Authentic cultural experiences with local communities, traditional lifestyles, village visits, and unforgettable Tanzanian hospitality.
-                  </p>
+  {description}
+</p>
 
                   <Link
                     href={href || '/booking'}
                     className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
                   >
-                    View Cultural Tour
+                    Explore Culture
                   </Link>
                 </div>
               </div>

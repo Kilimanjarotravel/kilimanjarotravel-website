@@ -21,7 +21,7 @@ export default function PareCulturalTourPage() {
       <PageHero
   title="Pare Cultural Tour"
   subtitle="Explore the traditions, village life, farming, forests, and scenic landscapes of the Pare Mountains."
-  image="/images/landcruiser.jpeg"
+  image="/images/pare-moja.jpg"
 />
 
       <section className="py-16">

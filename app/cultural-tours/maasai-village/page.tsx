@@ -21,7 +21,7 @@ export default function MaasaiVillagePage() {
       <PageHero
   title="Maasai Village Experience"
   subtitle="Meet the Maasai community, learn about traditional life, customs, dances, and their deep connection with nature."
-  image="/images/lion.jpeg"
+  image="/images/maasai-tatu.jpg"
 />
 
       <section className="py-16">

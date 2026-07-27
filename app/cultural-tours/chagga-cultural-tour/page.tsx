@@ -21,7 +21,7 @@ export default function ChaggaCulturalTourPage() {
       <PageHero
   title="Chagga Cultural Tour"
   subtitle="Discover Chagga traditions, village life, local food, coffee culture, and the heritage of communities living around Mount Kilimanjaro."
-  image="/images/fleet.jpeg"
+  image="/images/chaga-mbili.jpg"
 />
 
       <section className="py-16">
