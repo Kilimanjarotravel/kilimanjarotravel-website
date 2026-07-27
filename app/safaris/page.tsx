@@ -98,10 +98,11 @@ export default function Safaris() {
       <WhatsApp />
 
       <PageHero
-        title="Tanzania Safari Experiences"
-        subtitle="Discover unforgettable wildlife safaris, mountain adventures, cultural tours, waterfalls, hot springs, and beach holidays across Tanzania."
-        image="/images/lion.jpeg"
-      />
+  title="Tanzania Safari Packages"
+  subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
+  image="/images/lion.jpeg"
+  position="65% center"
+/>
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">

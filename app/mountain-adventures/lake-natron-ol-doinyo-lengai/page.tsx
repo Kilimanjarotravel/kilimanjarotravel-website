@@ -21,7 +21,7 @@ export default function LakeNatronOlDoinyoLengaiPage() {
       <PageHero
   title="Lake Natron & Ol Doinyo Lengai Adventure"
   subtitle="Discover the dramatic landscapes of Lake Natron, flamingo habitats, Maasai culture, and the active volcanic slopes of Ol Doinyo Lengai."
-  image="/images/landcruiser.jpeg"
+  image="/images/oldoinyo-lengai.jpg"
 />
 
       <section className="py-16">

@@ -21,7 +21,7 @@ export default function MountMeruPage() {
       <PageHero
   title="Mount Meru Trek"
   subtitle="Climb Tanzania's second-highest mountain through beautiful forests, wildlife-rich landscapes, and dramatic summit views."
-  image="/images/fleet.jpeg"
+  image="/images/mount-meru.jpg"
 />
 
       <section className="py-16">

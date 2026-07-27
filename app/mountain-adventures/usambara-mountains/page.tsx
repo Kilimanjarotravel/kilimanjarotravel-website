@@ -20,7 +20,7 @@ export default function UsambaraMountainsPage() {
       <PageHero
   title="Usambara Mountains Experience"
   subtitle="Discover lush forests, scenic viewpoints, local villages, waterfalls, and the peaceful beauty of Tanzania's Usambara Mountains."
-  image="/images/fleet.jpeg"
+  image="/images/usambara-safari.jpg"
 />
 
       <section className="py-16">

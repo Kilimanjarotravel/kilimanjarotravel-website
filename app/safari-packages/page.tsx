@@ -7,7 +7,7 @@ import Link from 'next/link';
 const packages = [
 {
 title: '2 Days Tarangire & Ngorongoro',
-image: '/images/lion.jpeg',
+image: '/images/packages-tarangire.jpg',
 description:
 'Discover Tarangire National Park and the famous Ngorongoro Crater on this unforgettable 2-day safari.',
 href: '/safari-packages/2-days-tarangire-ngorongoro',
@@ -18,7 +18,7 @@ price: '$650',
 },
 {
 title: '3 Days Serengeti & Ngorongoro',
-image: '/images/safari-vehicle.jpeg',
+image: '/images/packages-sere.jpg',
 description:
 'Experience the endless plains of Serengeti and the spectacular Ngorongoro Crater.',
 href: '/safari-packages/3-days-serengeti-ngorongoro',
@@ -29,7 +29,7 @@ price: '$950',
 },
 {
 title: '4 Days Tarangire, Serengeti & Ngorongoro',
-image: '/images/landcruiser.jpeg',
+image: '/images/twiga-tano.jpg',
 description:
 'Explore Tanzania’s most famous northern parks on a 4-day safari adventure.',
 href: '/safari-packages/4-days-tarangire-serengeti-ngorongoro',
@@ -40,7 +40,7 @@ price: '$1,250',
 },
 {
 title: '5 Days Northern Circuit Safari',
-image: '/images/safari-vehicle.jpeg',
+image: '/images/viboko-ngoro.jpg',
 description:
 'Explore Tarangire, Serengeti and Ngorongoro on a rewarding five-day private safari.',
 href: '/safari-packages/5-days-northern-circuit',
@@ -51,7 +51,7 @@ price: '$1,520',
 },
 {
   title: '6 Days Northern Circuit Safari',
-  image: '/images/landcruiser.jpeg',
+  image: '/images/mid-range.jpg',
   description:
     'Discover Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete six-day private safari.',
   href: '/safari-packages/6-days-northern-circuit',
@@ -62,7 +62,7 @@ price: '$1,520',
 },
 {
   title: '7 Days Northern Circuit Safari',
-  image: '/images/lion.jpeg',
+  image: '/images/fleet.jpeg',
   description:
     'Enjoy Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete seven-day private safari.',
   href: '/safari-packages/7-days-northern-circuit',
@@ -73,7 +73,7 @@ price: '$1,520',
 },
 {
   title: '8 Days Northern Circuit Safari',
-  image: '/images/lion.jpeg',
+  image: '/images/mbwa-ngoro.jpg',
   description:
     'Experience the ultimate Northern Circuit adventure through Tarangire, Lake Manyara, Serengeti and Ngorongoro with an extra day for wildlife viewing.',
   href: '/safari-packages/8-days-northern-circuit',
@@ -84,7 +84,7 @@ price: '$1,520',
 },
 {
   title: '9 Days Northern Circuit Safari',
-  image: '/images/lion.jpeg',
+  image: '/images/lion-manyara.jpg',
   description:
     'Enjoy an extended Northern Circuit safari through Tarangire, Lake Manyara, Serengeti and Ngorongoro.',
   href: '/safari-packages/9-days-northern-circuit',
@@ -95,7 +95,7 @@ price: '$1,520',
 },
 {
   title: '10 Days Northern Circuit Safari',
-  image: '/images/landcruiser.jpeg',
+  image: '/images/punda-ngoro.jpg',
   description:
     'Explore Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete ten-day private safari.',
   href: '/safari-packages/10-days-northern-circuit',
@@ -115,7 +115,7 @@ return (
 <PageHero
 title="Tanzania Safari Packages"
 subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
-image="/images/lion.jpeg"
+image="/images/safari.jpg"
 />
 
 <section className="py-20">

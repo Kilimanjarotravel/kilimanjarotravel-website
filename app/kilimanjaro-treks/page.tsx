@@ -65,7 +65,7 @@ export default function Treks() {
       <PageHero
         title="Kilimanjaro Treks"
         subtitle="Climb Africa’s highest mountain with experienced mountain guides."
-        image="/images/landcruiser.jpeg"
+        image="/images/mountain.jpg"
       />
 
       <section className="bg-cream py-20">

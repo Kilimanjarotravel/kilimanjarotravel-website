@@ -5,21 +5,27 @@ import PageHero from '@/components/PageHero';
 import Link from 'next/link';
 
 const packages = [
-  [
-    'Mount Meru Trek',
-    '/images/fleet.jpeg',
-    '/mountain-adventures/mount-meru',
-  ],
-  [
-    'Usambara Mountains',
-    '/images/lion.jpeg',
-    '/mountain-adventures/usambara-mountains',
-  ],
-  [
-    'Lake Natron & Ol Doinyo Lengai',
-    '/images/landcruiser.jpeg',
-    '/mountain-adventures/lake-natron-ol-doinyo-lengai',
-  ],
+  {
+    title: "Mount Meru Trek",
+    image: "/images/meru-trek.jpg",
+    href: "/mountain-adventures/mount-meru",
+    description:
+      "Climb Tanzania’s second-highest mountain through forests, wildlife-rich trails, and dramatic summit landscapes.",
+  },
+  {
+    title: "Usambara Mountains",
+    image: "/images/usambara.jpg",
+    href: "/mountain-adventures/usambara-mountains",
+    description:
+      "Explore lush forests, scenic viewpoints, waterfalls, local villages, and authentic cultural experiences.",
+  },
+  {
+    title: "Lake Natron & Ol Doinyo Lengai",
+    image: "/images/andrew-legai.jpeg",
+    href: "/mountain-adventures/lake-natron-ol-doinyo-lengai",
+    description:
+      "Discover Lake Natron’s unique landscapes and experience an adventurous trek around the sacred Ol Doinyo Lengai.",
+  },
 ];
 
 export default function MountainAdventures() {
@@ -31,7 +37,7 @@ export default function MountainAdventures() {
       <PageHero
   title="Mountain Adventures"
   subtitle="Explore Mount Meru, the Usambara Mountains, and the dramatic landscapes of Lake Natron and Ol Doinyo Lengai."
-  image="/images/landcruiser.jpeg"
+  image="/images/mountain.jpg"
 />
 
       <section className="py-20">
@@ -39,7 +45,7 @@ export default function MountainAdventures() {
           <h2 className="section-title">Mountain Adventure Packages</h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {packages.map(([title, image, href]) => (
+            {packages.map(({ title, image, href, description }) => (
               <div
                 className="overflow-hidden rounded-3xl bg-white shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
                 key={title}
@@ -54,14 +60,14 @@ export default function MountainAdventures() {
                   <h3 className="text-2xl font-bold text-forest">{title}</h3>
 
                   <p className="mt-4 leading-7 text-black/70">
-                    Tailor-made mountain adventures with professional guides, scenic trails, cultural experiences, and unforgettable landscapes.
-                  </p>
+  {description}
+</p>
 
                   <Link
                     href={href || '/booking'}
                     className="mt-6 inline-block rounded-full bg-gold px-6 py-3 font-bold text-white"
                   >
-                    View Adventure
+                    Explore Adventure
                   </Link>
                 </div>
               </div>
