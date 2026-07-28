@@ -7,105 +7,105 @@ import Link from 'next/link';
 const dayTrips = [
   {
     title: 'Arusha National Park Day Trip',
-    image: '/images/lion.jpeg',
+    image: '/images/arusha-np-one.jpg',
     text: 'Enjoy wildlife, Mount Meru views, scenic lakes and a beautiful day in Arusha National Park.',
     href: '/day-trips/arusha-national-park',
     itineraryReady: true,
   },
   {
     title: 'Tarangire National Park Day Trip',
-    image: '/images/landcruiser.jpeg',
+    image: '/images/tarangire-one.jpg',
     text: 'See elephants, baobab trees and classic northern Tanzania wildlife in Tarangire.',
     href: '/day-trips/tarangire-national-park',
     itineraryReady: true,
   },
   {
     title: 'Ngorongoro Crater Day Trip',
-    image: '/images/safari-vehicle.jpeg',
+    image: '/images/ngorongoro-one.jpg',
     text: 'Descend into the famous Ngorongoro Crater for an unforgettable wildlife experience.',
     href: '/day-trips/ngorongoro-crater',
     itineraryReady: true,
   },
   {
     title: 'Lake Manyara National Park Day Trip',
-    image: '/images/zanzibar.jpeg',
+    image: '/images/manyara-one.jpg',
     text: 'Discover forest scenery, rich birdlife, wildlife and the beautiful Lake Manyara landscape.',
     href: '/day-trips/lake-manyara-national-park',
     itineraryReady: true,
   },
   {
     title: 'Materuni Waterfalls & Coffee Tour',
-    image: '/images/fleet.jpeg',
+    image: '/images/materuni-two.jpg',
     text: 'Hike to Materuni Waterfalls and learn how local Tanzanian coffee is grown and prepared.',
     href: '/day-trips/materuni-waterfalls-coffee-tour',
     itineraryReady: true,
   },
   {
     title: 'Chemka Hot Springs',
-    image: '/images/zanzibar.jpeg',
+    image: '/images/chemka-one.jpg',
     text: 'Relax and swim in clear natural spring water surrounded by beautiful tropical scenery.',
     href: '/day-trips/chemka-hot-springs',
 itineraryReady: true,
   },
   {
     title: 'Napuru Waterfalls & Hiking',
-    image: '/images/lion.jpeg',
+    image: '/images/napuru-one.jpg',
     text: 'Enjoy a guided hike, panoramic views of Arusha and Mount Meru, and a visit to Napuru Waterfalls.',
     href: '/day-trips/napuru-waterfalls-hiking',
 itineraryReady: true,
   },
   {
     title: 'Lake Duluti Canoeing',
-    image: '/images/safari-vehicle.jpeg',
+    image: '/images/duluti-four.jpg',
     text: 'Explore the peaceful lake by canoe and enjoy birds, nature and views of the surrounding forest.',
     href: '/day-trips/lake-duluti-canoeing',
 itineraryReady: true,
   },
   {
     title: 'Arusha Cultural & History Tour',
-    image: '/images/logo.jpeg',
+    image: '/images/town-three.jpg',
     text: 'Visit museums and cultural centers while learning about Tanzania’s heritage and local history.',
     href: '/day-trips/arusha-cultural-history-tour',
 itineraryReady: true,
   },
   {
     title: 'Coffee Plantation Tour',
-    image: '/images/fleet.jpeg',
+    image: '/images/coffee-one.jpg',
     text: 'Visit a local coffee farm, learn the production process and taste fresh Tanzanian coffee.',
     href: '/day-trips/coffee-plantation-tour',
 itineraryReady: true,
   },
   {
     title: 'Maasai Market & Local Handicrafts',
-    image: '/images/logo.jpeg',
+    image: '/images/maasai-shop.jpg',
     text: 'Browse colorful crafts, paintings, souvenirs and handmade items from local artisans.',
     href: '/day-trips/maasai-market-local-handicrafts',
 itineraryReady: true,
   },
   {
     title: 'Tanzania Bicycle Tours',
-    image: '/images/landcruiser.jpeg',
+    image: '/images/bicycle.one.jpg',
     text: 'Explore scenic neighborhoods, villages and local life around Arusha by bicycle.',
     href: '/day-trips/tanzania-bicycle-tours',
 itineraryReady: true,
   },
   {
   title: 'Kilimanjaro Shira Plateau Day Hike',
-  image: '/images/landcruiser.jpeg',
+  image: '/images/shira-one.jpg',
   text: 'Experience Mount Kilimanjaro on a guided high-altitude hike across the spectacular Shira Plateau.',
   href: '/day-trips/kilimanjaro-shira-plateau-day-hike',
   itineraryReady: true,
 },
 {
   title: 'Mkomazi National Park Day Trip',
-  image: '/images/landcruiser.jpeg',
+  image: '/images/mkomazi-day-one.jpg',
   text: 'Explore dramatic landscapes, rich birdlife and important black rhino and wild dog conservation areas.',
   href: '/day-trips/mkomazi-national-park',
   itineraryReady: true,
 },
 {
   title: 'Mikumi Safari from Zanzibar',
-  image: '/images/lion.jpeg',
+  image: '/images/mikumi-day.jpg',
   text: 'Fly from Zanzibar for a full-day wildlife safari, 4x4 game drive and lunch in Mikumi National Park.',
   href: '/day-trips/mikumi-from-zanzibar',
   itineraryReady: true,
@@ -121,7 +121,7 @@ export default function DayTripsPage() {
       <PageHero
         title="Tanzania Day Trips"
         subtitle="Discover wildlife, waterfalls, culture, coffee, hiking and unforgettable local experiences from Arusha."
-        image="/images/safari-vehicle.jpeg"
+        image="/images/day-trip-one.jpg"
       />
 
       <section className="py-20">
