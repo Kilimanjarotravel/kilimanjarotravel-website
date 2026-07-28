@@ -9,7 +9,7 @@ export default function UsambaraMountainsSafariPage() {
       <Header />
       <WhatsApp />
 
-      <section className="relative min-h-[340px] bg-[url('/images/usambara-safari.jpg')] bg-cover bg-center">
+      <section className="relative min-h-[340px] bg-[url('/images/usambara.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative mx-auto flex min-h-[340px] max-w-7xl items-center px-6 pt-24 text-white">

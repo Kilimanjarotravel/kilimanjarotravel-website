@@ -22,7 +22,7 @@ export default function SambaaCulturalTourPage() {
       <PageHero
   title="Sambaa Cultural Tour"
   subtitle="Discover the traditions, village life, farming, forests, and scenic landscapes of the Usambara Mountains."
-  image="/images/lion.jpeg"
+  image="/images/Usambara.jpg"
 />
 
       <section className="py-16">

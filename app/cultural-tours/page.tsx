@@ -21,28 +21,28 @@ const packages = [
   },
   {
     title: "Pare Cultural Tour",
-    image: "/images/pare-moja.jpg/",
+    image: "/images/pare-one.jpg/",
     href: "/cultural-tours/pare-cultural-tour",
     description:
       "Discover the scenic Pare Mountains, historic villages, local farming traditions, and welcoming community experiences.",
   },
   {
     title: "Sambaa Cultural Tour",
-    image: "/images/lion.jpeg",
+    image: "/images/sambaa.jpg",
     href: "/cultural-tours/sambaa-cultural-tour",
     description:
       "Experience Sambaa traditions, mountain villages, local markets, storytelling, and beautiful landscapes in the Usambara region.",
   },
   {
     title: "Hadzabe & Datoga Cultural Tour",
-    image: "/images/landcruiser.jpeg",
+    image: "/images/hadzabe.jpg",
     href: "/cultural-tours/hadzabe-datoga",
     description:
       "Meet the Hadzabe hunter-gatherers and Datoga artisans near Lake Eyasi while learning about their unique ways of life.",
   },
   {
     title: "Mto wa Mbu Cultural Tour",
-    image: "/images/zanzibar.jpeg",
+    image: "/images/mto-wa-mbu.jpg",
     href: "/cultural-tours/mto-wa-mbu",
     description:
       "Walk through a vibrant multicultural village, visit farms and workshops, taste local food, and meet community members.",

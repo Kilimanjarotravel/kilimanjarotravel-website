@@ -22,7 +22,7 @@ export default function HadzabeDatogaCulturalTourPage() {
       <PageHero
   title="Hadzabe & Datoga Cultural Tour"
   subtitle="Meet the Hadzabe hunter-gatherers and Datoga artisans near Lake Eyasi, and discover their traditional lifestyles and skills."
-  image="/images/landcruiser.jpeg"
+  image="/images/hadzabe-two.jpg"
 />
 
       <section className="py-16">

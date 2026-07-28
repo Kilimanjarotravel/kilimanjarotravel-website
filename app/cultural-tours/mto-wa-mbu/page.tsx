@@ -22,7 +22,7 @@ export default function MtoWaMbuCulturalTourPage() {
       <PageHero
   title="Mto wa Mbu Cultural Tour"
   subtitle="Explore local markets, farms, art, food, and the diverse communities of Mto wa Mbu near Lake Manyara."
-  image="/images/zanzibar.jpeg"
+  image="/images/mtowambu-one.jpg"
 />
 
       <section className="py-16">
