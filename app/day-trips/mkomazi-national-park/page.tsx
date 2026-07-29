@@ -83,7 +83,7 @@ export default function MkomaziNationalParkPage() {
       <PageHero
         title="Mkomazi National Park Day Trip"
         subtitle="Discover dramatic dry-country landscapes, rich birdlife and one of Tanzania’s most important wildlife conservation areas."
-        image="/images/landcruiser.jpeg"
+        image="/images/tembo-mkomazi.jpg"
       />
 
       <section className="py-20">
@@ -214,7 +214,7 @@ export default function MkomaziNationalParkPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/punda.jpg/"
                 alt="Mkomazi National Park safari"
                 className="h-[420px] w-full object-cover"
               />

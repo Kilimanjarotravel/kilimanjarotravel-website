@@ -72,7 +72,7 @@ export default function TarangireNationalParkPage() {
       <PageHero
         title="Tarangire National Park Day Trip"
         subtitle="Discover large elephant herds, ancient baobab trees and unforgettable wildlife in one remarkable day."
-        image="/images/landcruiser.jpeg"
+        image="/images/water-bottle.jpg"
       />
 
       <section className="py-20">
@@ -193,7 +193,7 @@ export default function TarangireNationalParkPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/warthdog .jpg"
                 alt="Safari vehicle in Tarangire National Park"
                 className="h-[420px] w-full object-cover"
               />

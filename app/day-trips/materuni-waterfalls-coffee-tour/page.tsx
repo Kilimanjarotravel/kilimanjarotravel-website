@@ -78,7 +78,7 @@ export default function MateruniWaterfallsCoffeeTourPage() {
       <PageHero
         title="Materuni Waterfalls & Coffee Tour"
         subtitle="Discover a beautiful waterfall, Chagga culture and the complete journey of Tanzanian coffee in one unforgettable day."
-        image="/images/zanzibar.jpeg"
+        image="/images/materuni-four.jpg"
       />
 
       <section className="py-20">
@@ -193,7 +193,7 @@ export default function MateruniWaterfallsCoffeeTourPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/materuni-five.jpg"
                 alt="Materuni Waterfalls and coffee tour"
                 className="h-[420px] w-full object-cover"
               />

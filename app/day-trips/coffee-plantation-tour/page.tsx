@@ -192,7 +192,7 @@ export default function CoffeePlantationTourPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="images/mountain.jpg"
                 alt="Coffee plantation tour in Tanzania"
                 className="h-[420px] w-full object-cover"
               />

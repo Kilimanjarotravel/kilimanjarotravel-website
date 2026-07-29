@@ -72,7 +72,7 @@ export default function ChemkaHotSpringsPage() {
       <PageHero
         title="Chemka Hot Springs Day Trip"
         subtitle="Swim, relax and enjoy the clear turquoise waters of one of northern Tanzania’s most beautiful natural springs."
-        image="/images/zanzibar.jpeg"
+        image="/images/chemka-six.jpg"
       />
 
       <section className="py-20">
@@ -186,7 +186,7 @@ export default function ChemkaHotSpringsPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/chemka-two.jpg"
                 alt="Chemka Hot Springs"
                 className="h-[420px] w-full object-cover"
               />

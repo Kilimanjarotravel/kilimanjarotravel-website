@@ -78,7 +78,7 @@ export default function LakeDulutiCanoeingPage() {
       <PageHero
         title="Lake Duluti Canoeing & Nature Walk"
         subtitle="Paddle across a peaceful crater lake, enjoy rich birdlife and explore beautiful forest scenery near Arusha."
-        image="/images/safari-vehicle.jpeg"
+        image="/images/duluti-two.jpg"
       />
 
       <section className="py-20">
@@ -194,7 +194,7 @@ export default function LakeDulutiCanoeingPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/landcruiser.jpeg"
+                src="/images/duluti-three.jpg"
                 alt="Lake Duluti canoeing experience"
                 className="h-[420px] w-full object-cover"
               />

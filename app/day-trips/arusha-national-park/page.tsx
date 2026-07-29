@@ -71,7 +71,7 @@ export default function ArushaNationalParkPage() {
       <PageHero
         title="Arusha National Park Day Trip"
         subtitle="Discover wildlife, Momella Lakes, Mount Meru views and beautiful landscapes in one unforgettable day."
-        image="/images/lion.jpeg"
+        image="/images/arusha-np-five.jpg"
       />
 
       <section className="py-20">
@@ -191,7 +191,7 @@ export default function ArushaNationalParkPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/arusha-np-two.jpg"
                 alt="Safari vehicle in Tanzania"
                 className="h-[420px] w-full object-cover"
               />

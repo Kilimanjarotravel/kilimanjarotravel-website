@@ -77,7 +77,7 @@ export default function ArushaCulturalHistoryTourPage() {
       <PageHero
         title="Arusha Cultural & History Tour"
         subtitle="Discover Tanzania’s history, local culture, African art, handicrafts and everyday life in Arusha."
-        image="/images/logo.jpeg"
+        image="/images/town-one.jpg"
       />
 
       <section className="py-20">
@@ -191,7 +191,7 @@ export default function ArushaCulturalHistoryTourPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/fleet.jpeg"
+                src="/images/town-two.jpg"
                 alt="Arusha cultural and history tour"
                 className="h-[420px] w-full object-cover"
               />

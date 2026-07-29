@@ -77,7 +77,7 @@ export default function NgorongoroCraterPage() {
       <PageHero
         title="Ngorongoro Crater Day Trip"
         subtitle="Descend into the world-famous crater and discover the Big Five, breathtaking scenery and unforgettable wildlife."
-        image="/images/lion.jpeg"
+        image="/images/ngorongoro-five.jpg"
       />
 
       <section className="py-20">
@@ -193,7 +193,7 @@ export default function NgorongoroCraterPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/ngorongoro-three.jpeg"
                 alt="Ngorongoro Crater safari"
                 className="h-[420px] w-full object-cover"
               />

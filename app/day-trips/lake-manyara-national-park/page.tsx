@@ -72,7 +72,7 @@ export default function LakeManyaraNationalParkPage() {
       <PageHero
         title="Lake Manyara National Park Day Trip"
         subtitle="Discover lush forests, Rift Valley scenery, rich birdlife and diverse wildlife in one unforgettable day."
-        image="/images/lion.jpeg"
+        image="/images/manyara-six.jpg"
       />
 
       <section className="py-20">
@@ -187,7 +187,7 @@ export default function LakeManyaraNationalParkPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/manyara-five.jpeg"
                 alt="Lake Manyara safari"
                 className="h-[420px] w-full object-cover"
               />

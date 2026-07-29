@@ -84,7 +84,7 @@ export default function KilimanjaroShiraPlateauDayHikePage() {
       <PageHero
         title="Kilimanjaro Shira Plateau Day Hike"
         subtitle="Experience the beauty of Mount Kilimanjaro on a guided high-altitude hike across the spectacular Shira Plateau."
-        image="/images/landcruiser.jpeg"
+        image="/images/shira-two.jpg"
       />
 
       <section className="py-20">
@@ -199,7 +199,7 @@ export default function KilimanjaroShiraPlateauDayHikePage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/mountain.jpg"
                 alt="Kilimanjaro Shira Plateau day hike"
                 className="h-[420px] w-full object-cover"
               />

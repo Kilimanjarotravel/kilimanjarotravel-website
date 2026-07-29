@@ -77,7 +77,7 @@ export default function NapuruWaterfallsHikingPage() {
       <PageHero
         title="Napuru Waterfalls & Hiking"
         subtitle="Enjoy a guided hike, beautiful waterfalls and panoramic views of Arusha and Mount Meru."
-        image="/images/lion.jpeg"
+        image="/images/napuru-four.jpg"
       />
 
       <section className="py-20">
@@ -192,7 +192,7 @@ export default function NapuruWaterfallsHikingPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/napuru-three.jpg"
                 alt="Napuru hiking experience"
                 className="h-[420px] w-full object-cover"
               />

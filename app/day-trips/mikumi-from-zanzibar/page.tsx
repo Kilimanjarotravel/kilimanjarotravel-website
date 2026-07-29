@@ -86,7 +86,7 @@ export default function MikumiFromZanzibarPage() {
       <PageHero
         title="Mikumi Safari from Zanzibar"
         subtitle="Fly from Zanzibar for an unforgettable one-day wildlife safari in Mikumi National Park."
-        image="/images/lion.jpeg"
+        image="/images/mikumi-three.jpg"
       />
 
       <section className="py-20">
@@ -212,7 +212,7 @@ export default function MikumiFromZanzibarPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/mikumi-day-two.jpg"
                 alt="Mikumi safari from Zanzibar"
                 className="h-[420px] w-full object-cover"
               />

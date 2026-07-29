@@ -34,6 +34,27 @@ const dayTrips = [
     itineraryReady: true,
   },
   {
+  title: 'Mkomazi National Park Day Trip',
+  image: '/images/mkomazi-day-one.jpg',
+  text: 'Explore dramatic landscapes, rich birdlife and important black rhino and wild dog conservation areas.',
+  href: '/day-trips/mkomazi-national-park',
+  itineraryReady: true,
+},
+{
+  title: 'Mikumi Safari from Zanzibar',
+  image: '/images/mikumi-day.jpg',
+  text: 'Fly from Zanzibar for a full-day wildlife safari, 4x4 game drive and lunch in Mikumi National Park.',
+  href: '/day-trips/mikumi-from-zanzibar',
+  itineraryReady: true,
+},
+  {
+  title: 'Kilimanjaro Shira Plateau Day Hike',
+  image: '/images/shira-one.jpg',
+  text: 'Experience Mount Kilimanjaro on a guided high-altitude hike across the spectacular Shira Plateau.',
+  href: '/day-trips/kilimanjaro-shira-plateau-day-hike',
+  itineraryReady: true,
+},
+  {
     title: 'Materuni Waterfalls & Coffee Tour',
     image: '/images/materuni-two.jpg',
     text: 'Hike to Materuni Waterfalls and learn how local Tanzanian coffee is grown and prepared.',
@@ -89,27 +110,6 @@ itineraryReady: true,
     href: '/day-trips/tanzania-bicycle-tours',
 itineraryReady: true,
   },
-  {
-  title: 'Kilimanjaro Shira Plateau Day Hike',
-  image: '/images/shira-one.jpg',
-  text: 'Experience Mount Kilimanjaro on a guided high-altitude hike across the spectacular Shira Plateau.',
-  href: '/day-trips/kilimanjaro-shira-plateau-day-hike',
-  itineraryReady: true,
-},
-{
-  title: 'Mkomazi National Park Day Trip',
-  image: '/images/mkomazi-day-one.jpg',
-  text: 'Explore dramatic landscapes, rich birdlife and important black rhino and wild dog conservation areas.',
-  href: '/day-trips/mkomazi-national-park',
-  itineraryReady: true,
-},
-{
-  title: 'Mikumi Safari from Zanzibar',
-  image: '/images/mikumi-day.jpg',
-  text: 'Fly from Zanzibar for a full-day wildlife safari, 4x4 game drive and lunch in Mikumi National Park.',
-  href: '/day-trips/mikumi-from-zanzibar',
-  itineraryReady: true,
-},
 ];
 
 export default function DayTripsPage() {
@@ -121,7 +121,7 @@ export default function DayTripsPage() {
       <PageHero
         title="Tanzania Day Trips"
         subtitle="Discover wildlife, waterfalls, culture, coffee, hiking and unforgettable local experiences from Arusha."
-        image="/images/day-trip-one.jpg"
+        image="/images/tarangire-one.jpg"
       />
 
       <section className="py-20">
