@@ -34,6 +34,30 @@ const dayTrips = [
     itineraryReady: true,
   },
   {
+  title: "Serval Wildlife Day Trip",
+  image: "/images/serval-one.jpg",
+  text:
+    "Enjoy a close-up wildlife experience with giraffes, zebras, lions, monkeys, and other animals in a beautiful natural setting.",
+  href: "/day-trips/serval-wildlife",
+  itineraryReady: false,
+},
+{
+  title: "Makuyuni Wildlife Day Trip",
+  image: "/images/makuyuni-one.jpg",
+  text:
+    "Discover wildlife, beautiful landscapes, and the natural surroundings of Makuyuni on an exciting full-day adventure.",
+  href: "/day-trips/makuyuni-wildlife",
+  itineraryReady: false,
+},
+{
+  title: "Nyerere National Park Fly-in Day Trip From Zanzibar",
+  image: "/images/nyerere-one.jpg",
+  text:
+    "Fly from Zanzibar to Nyerere National Park for a full-day safari featuring elephants, lions, giraffes, buffaloes, hippos, and the Rufiji River.",
+  href: "/day-trips/nyerere-from-zanzibar",
+  itineraryReady: false,
+},
+  {
   title: 'Mkomazi National Park Day Trip',
   image: '/images/mkomazi-day-one.jpg',
   text: 'Explore dramatic landscapes, rich birdlife and important black rhino and wild dog conservation areas.',

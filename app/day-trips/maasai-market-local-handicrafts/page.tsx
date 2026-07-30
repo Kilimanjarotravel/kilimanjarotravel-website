@@ -78,7 +78,7 @@ export default function MaasaiMarketLocalHandicraftsPage() {
       <PageHero
         title="Maasai Market & Local Handicrafts"
         subtitle="Discover colorful Tanzanian art, handmade souvenirs, traditional jewelry and the creativity of local artisans."
-        image="/images/logo.jpeg"
+        image="/images/maasai-shop-two.jpg"
       />
 
       <section className="py-20">
@@ -191,7 +191,7 @@ export default function MaasaiMarketLocalHandicraftsPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/fleet.jpeg"
+                src="/images/masai-shop-three.jpg"
                 alt="Maasai Market and local handicrafts"
                 className="h-[420px] w-full object-cover"
               />

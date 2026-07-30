@@ -51,7 +51,7 @@ export default function TanzaniaBicycleToursPage() {
       <PageHero
         title="Tanzania Bicycle Tours"
         subtitle="Explore Tanzania on two wheels through villages, coffee farms, forests, mountain foothills and beautiful landscapes."
-        image="/images/landcruiser.jpeg"
+        image="/images/bicycle-four.jpg"
       />
 
       <section className="py-20">

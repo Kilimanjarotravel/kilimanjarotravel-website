@@ -78,7 +78,7 @@ export default function CoffeePlantationTourPage() {
       <PageHero
         title="Coffee Plantation Tour"
         subtitle="Discover how Tanzanian coffee is grown, processed, roasted and prepared during an authentic local experience."
-        image="/images/fleet.jpeg"
+        image="/images/coffee-b.jpg"
       />
 
       <section className="py-20">
@@ -192,7 +192,7 @@ export default function CoffeePlantationTourPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="images/mountain.jpg"
+                src="/images/cofee-n.jpg"
                 alt="Coffee plantation tour in Tanzania"
                 className="h-[420px] w-full object-cover"
               />
