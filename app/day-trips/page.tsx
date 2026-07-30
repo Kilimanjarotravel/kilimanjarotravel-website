@@ -39,7 +39,7 @@ const dayTrips = [
   text:
     "Enjoy a close-up wildlife experience with giraffes, zebras, lions, monkeys, and other animals in a beautiful natural setting.",
   href: "/day-trips/serval-wildlife",
-  itineraryReady: false,
+  itineraryReady: true,
 },
 {
   title: "Makuyuni Wildlife Day Trip",
@@ -47,7 +47,7 @@ const dayTrips = [
   text:
     "Discover wildlife, beautiful landscapes, and the natural surroundings of Makuyuni on an exciting full-day adventure.",
   href: "/day-trips/makuyuni-wildlife",
-  itineraryReady: false,
+  itineraryReady: true,
 },
 {
   title: "Nyerere National Park Fly-in Day Trip From Zanzibar",
@@ -55,7 +55,7 @@ const dayTrips = [
   text:
     "Fly from Zanzibar to Nyerere National Park for a full-day safari featuring elephants, lions, giraffes, buffaloes, hippos, and the Rufiji River.",
   href: "/day-trips/nyerere-from-zanzibar",
-  itineraryReady: false,
+  itineraryReady: true,
 },
   {
   title: 'Mkomazi National Park Day Trip',
