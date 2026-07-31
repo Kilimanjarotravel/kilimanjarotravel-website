@@ -92,14 +92,6 @@ export default function NyerereFromZanzibarPage() {
   professionally guided game drive.
 </p>
 
-<div className="mt-10 overflow-hidden rounded-3xl shadow-xl">
-  <img
-    src="/images/nyerere-three.jpg"
-    alt="Nyerere Wildlife Day Trip"
-    className="h-[350px] w-full object-cover"
-  />
-</div>
-
 <h2 className="mt-12 text-3xl font-bold text-forest">
   Day Trip Itinerary
 </h2>
@@ -174,6 +166,36 @@ export default function NyerereFromZanzibarPage() {
           </div>
         </div>
       </section>
+      <section className="py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="grid gap-8 md:grid-cols-2 md:items-center">
+      <div className="overflow-hidden rounded-3xl shadow-xl">
+        <img
+          src="/images/nyerere-three.jpg"
+          alt="Nyerere National Park Fly-in Day Trip"
+          className="h-[420px] w-full object-cover"
+        />
+      </div>
+
+      <div>
+        <p className="font-bold text-gold">WHAT TO BRING</p>
+
+        <h2 className="section-title mt-3">
+          Prepare for Your Nyerere Fly-in Safari
+        </h2>
+
+        <ul className="mt-6 space-y-3 text-lg">
+          <li>• Comfortable walking shoes</li>
+          <li>• Sun hat and sunscreen</li>
+          <li>• Camera or binoculars</li>
+          <li>• Light jacket</li>
+          <li>• Passport or travel identification</li>
+          <li>• Personal medication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
       <section className="bg-forest py-20 text-white">
   <div className="mx-auto max-w-4xl px-6 text-center">
     <h2 className="font-display text-4xl font-bold md:text-5xl">

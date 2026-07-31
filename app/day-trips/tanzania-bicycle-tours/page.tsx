@@ -21,10 +21,10 @@ const experiences = [
   'Coffee Farm Cycling',
   'Nature & Forest Trails',
   'Cultural Bicycle Experiences',
-  'Wildlife Cycling (where permitted)',
-  'Photography Rides',
-  'Family Friendly Tours',
-  'Half-Day, Full-Day & Multi-Day Tours',
+  'Local Market Visits',
+  'Scenic Photography Stops',
+  'Family Cycling Adventures',
+  'Custom Private Tours',
 ];
 
 const included = [
@@ -66,23 +66,18 @@ export default function TanzaniaBicycleToursPage() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-black/70">
-            Our guided bicycle tours are designed for travelers who want to
-            experience Tanzania beyond the safari vehicle. Ride through local
-            villages, coffee farms, mountain foothills and beautiful natural
-            landscapes while meeting local communities and enjoying authentic
-            experiences.
+            Our guided bicycle tours are designed for individuals, families, groups and local visitors who want to explore Tanzania in a unique and active way. Ride through local villages, mountain foothills and beautiful natural landscapes while meeting local communities and enjoying authentic cultural experiences.
           </p>
 
           <p className="mt-4 text-lg leading-8 text-black/70">
-            Every tour is private and can be customized according to your
-            interests, fitness level, available time and preferred destination.
+            Every bicycle tour is private and can be customized according to your interests, fitness level, available time and preferred destination, making it perfect for both local residents and international visitors.
           </p>
 
           <div className="mt-14 grid gap-10 md:grid-cols-2">
 
             <div className="rounded-3xl bg-cream p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-forest">
-                Available Destinations
+                Popular Cycling Destinations
               </h2>
 
               <ul className="mt-6 space-y-3">
@@ -94,7 +89,7 @@ export default function TanzaniaBicycleToursPage() {
 
             <div className="rounded-3xl bg-cream p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-forest">
-                Available Experiences
+                Cycling Experiences
               </h2>
 
               <ul className="mt-6 space-y-3">
@@ -148,11 +143,19 @@ export default function TanzaniaBicycleToursPage() {
             </div>
 
           </div>
+</div>
+</section>
 
-        </div>
-      </section>
+<div className="mt-16 text-center">
+  <Link
+    href="/booking"
+    className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+  >
+    Book Your Bicycle Tour
+  </Link>
+</div>
 
-      <section className="bg-forest py-20 text-white">
+<section className="bg-forest py-20 text-white">
 
         <div className="mx-auto max-w-4xl px-6 text-center">
 
