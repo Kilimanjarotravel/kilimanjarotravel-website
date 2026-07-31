@@ -7,23 +7,27 @@ import Link from "next/link";
 const itinerary = [
   {
     title: "Hotel Pickup",
-    text: "Your driver-guide will pick you up from your hotel in Arusha or Moshi and drive to Serval Wildlife.",
+    text: "Your driver-guide will pick you up from your hotel in Arusha and begin the scenic drive toward Makuyuni.",
   },
   {
-    title: "Arrival at Serval Wildlife",
-    text: "Meet giraffes, zebras, lions, monkeys and other rescued animals while learning about wildlife conservation.",
+    title: "Arrival and Wildlife Exploration",
+    text: "Begin exploring the Makuyuni area while searching for giraffes, zebras, antelopes, monkeys and other wildlife.",
   },
   {
-    title: "Lunch",
-    text: "Enjoy a delicious lunch in a peaceful natural environment.",
+    title: "Nature and Photography Experience",
+    text: "Enjoy the beautiful landscapes, take photographs and learn about the local ecosystem from your guide.",
   },
   {
-    title: "Photography & Leisure",
-    text: "Take memorable photographs and enjoy close-up wildlife encounters.",
+    title: "Picnic Lunch",
+    text: "Relax and enjoy a picnic lunch in a peaceful location surrounded by nature.",
   },
   {
-    title: "Return to Your Hotel",
-    text: "Drive back to your hotel in Arusha or Moshi after an unforgettable day.",
+    title: "Afternoon Wildlife Drive",
+    text: "Continue exploring the area and enjoy more opportunities to observe wildlife and birdlife.",
+  },
+  {
+    title: "Return to Arusha",
+    text: "After your Makuyuni wildlife experience, drive back to your hotel in Arusha.",
   },
 ];
 
@@ -52,17 +56,17 @@ const whatToBring = [
   "Personal medication",
 ];
 
-export default function ServalWildlifePage() {
+export default function MakuyuniWildlifePage() {
   return (
     <main>
       <Header />
       <WhatsApp />
 
       <PageHero
-        title="Serval Wildlife Day Trip"
-        subtitle="Enjoy a unique close-up wildlife experience near Mount Kilimanjaro."
-        image="/images/serval-two.jpg"
-      />
+  title="Makuyuni Wildlife Day Trip"
+  subtitle="Discover wildlife, open landscapes and the natural beauty of Makuyuni on a memorable private day trip."
+  image="/images/makuyunu-five.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
@@ -73,24 +77,25 @@ export default function ServalWildlifePage() {
               </p>
 
               <h2 className="section-title mt-3">
-                Meet Wildlife Up Close
-              </h2>
+  Discover the Wild Beauty of Makuyuni
+</h2>
 
               <p className="mt-6 text-lg leading-8 text-black/70">
-                Serval Wildlife offers visitors a unique opportunity to
-                interact with giraffes, zebras, lions, monkeys and other
-                beautiful animals in a peaceful natural environment.
-              </p>
+  Makuyuni offers a peaceful wildlife experience surrounded by open landscapes,
+  acacia woodland and beautiful views of northern Tanzania. The area provides
+  excellent opportunities to observe wildlife away from the busiest safari
+  routes.
+</p>
 
-              <p className="mt-4 text-lg leading-8 text-black/70">
-                This day trip is perfect for families, photographers,
-                couples and anyone looking for a relaxed wildlife
-                experience close to Arusha and Moshi.
-              </p>
+<p className="mt-4 text-lg leading-8 text-black/70">
+  This private day trip is ideal for travellers looking for nature, wildlife
+  photography and a relaxed safari experience. Depending on the season, you may
+  see giraffes, zebras, antelopes, wildebeest, monkeys and a variety of birdlife.
+</p>
 
 <div className="mt-10 overflow-hidden rounded-3xl shadow-xl">
   <img
-    src="/images/serval-four.jpg"
+    src="/images/makuyuni-two.jpg"
     alt="Makuyuni Wildlife Day Trip"
     className="h-[350px] w-full object-cover"
   />
@@ -121,11 +126,25 @@ export default function ServalWildlifePage() {
               <h2 className="text-2xl font-bold">Trip Details</h2>
 
               <div className="mt-6 space-y-4">
-                <p><strong>Duration:</strong> Full Day</p>
-                <p><strong>Departure:</strong> Arusha / Moshi</p>
-                <p><strong>Tour Type:</strong> Private Day Trip</p>
-                <p><strong>Best Time:</strong> All Year</p>
-                <p><strong>Transport:</strong> Private Vehicle</p>
+                <p>
+  <strong>Duration:</strong> Full Day
+</p>
+
+<p>
+  <strong>Departure:</strong> Arusha
+</p>
+
+<p>
+  <strong>Tour Type:</strong> Private Day Trip
+</p>
+
+<p>
+  <strong>Best Time:</strong> All Year
+</p>
+
+<p>
+  <strong>Transport:</strong> Private Safari Vehicle
+</p>
               </div>
 
               <Link
@@ -166,8 +185,7 @@ export default function ServalWildlifePage() {
           </div>
         </div>
       </section>
-
-<section className="bg-forest py-20 text-white">
+      <section className="bg-forest py-20 text-white">
   <div className="mx-auto max-w-4xl px-6 text-center">
     <h2 className="font-display text-4xl font-bold md:text-5xl">
       Ready for Your Makuyuni Wildlife Adventure?
@@ -193,12 +211,13 @@ export default function ServalWildlifePage() {
         className="rounded-full border border-white px-8 py-4 font-bold text-white"
       >
         Chat on WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
-
-<Footer />
-    </main>
-  );
-}
+                    Chat on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </section>
+      
+            <Footer />
+          </main>
+        );
+      }

@@ -6,24 +6,28 @@ import Link from "next/link";
 
 const itinerary = [
   {
-    title: "Hotel Pickup",
-    text: "Your driver-guide will pick you up from your hotel in Arusha or Moshi and drive to Serval Wildlife.",
+    title: "Hotel Transfer",
+    text: "Transfer from your hotel in Zanzibar to the airport for your scheduled flight.",
   },
   {
-    title: "Arrival at Serval Wildlife",
-    text: "Meet giraffes, zebras, lions, monkeys and other rescued animals while learning about wildlife conservation.",
+    title: "Flight to Nyerere National Park",
+    text: "Enjoy a scenic flight before meeting your professional safari guide.",
   },
   {
-    title: "Lunch",
-    text: "Enjoy a delicious lunch in a peaceful natural environment.",
+    title: "Game Drive",
+    text: "Explore Nyerere National Park searching for elephants, lions, buffaloes, giraffes, hippos and other wildlife.",
   },
   {
-    title: "Photography & Leisure",
-    text: "Take memorable photographs and enjoy close-up wildlife encounters.",
+    title: "Bush Lunch",
+    text: "Enjoy lunch in the park surrounded by the African wilderness.",
   },
   {
-    title: "Return to Your Hotel",
-    text: "Drive back to your hotel in Arusha or Moshi after an unforgettable day.",
+    title: "Afternoon Safari",
+    text: "Continue your wildlife adventure before returning to the airstrip.",
+  },
+  {
+    title: "Flight Back to Zanzibar",
+    text: "Fly back to Zanzibar where your driver will transfer you to your hotel.",
   },
 ];
 
@@ -52,17 +56,17 @@ const whatToBring = [
   "Personal medication",
 ];
 
-export default function ServalWildlifePage() {
+export default function NyerereFromZanzibarPage() {
   return (
     <main>
       <Header />
       <WhatsApp />
 
       <PageHero
-        title="Serval Wildlife Day Trip"
-        subtitle="Enjoy a unique close-up wildlife experience near Mount Kilimanjaro."
-        image="/images/serval-two.jpg"
-      />
+  title="Nyerere National Park Fly-in Day Trip"
+  subtitle="Fly from Zanzibar for an unforgettable full-day safari in Tanzania's largest national park."
+  image="/images/nyerere-two.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
@@ -73,25 +77,25 @@ export default function ServalWildlifePage() {
               </p>
 
               <h2 className="section-title mt-3">
-                Meet Wildlife Up Close
-              </h2>
+  Explore Tanzania&apos;s Largest National Park
+</h2>
 
               <p className="mt-6 text-lg leading-8 text-black/70">
-                Serval Wildlife offers visitors a unique opportunity to
-                interact with giraffes, zebras, lions, monkeys and other
-                beautiful animals in a peaceful natural environment.
-              </p>
+  Experience one of Tanzania's most spectacular safari destinations with a
+  convenient fly-in day trip from Zanzibar. Nyerere National Park is famous
+  for its vast wilderness, the Rufiji River and incredible wildlife.
+</p>
 
-              <p className="mt-4 text-lg leading-8 text-black/70">
-                This day trip is perfect for families, photographers,
-                couples and anyone looking for a relaxed wildlife
-                experience close to Arusha and Moshi.
-              </p>
+<p className="mt-4 text-lg leading-8 text-black/70">
+  During your adventure you may encounter elephants, lions, buffaloes,
+  giraffes, zebras, hippos, crocodiles and many bird species while enjoying a
+  professionally guided game drive.
+</p>
 
 <div className="mt-10 overflow-hidden rounded-3xl shadow-xl">
   <img
-    src="/images/serval-four.jpg"
-    alt="Makuyuni Wildlife Day Trip"
+    src="/images/nyerere-three.jpg"
+    alt="Nyerere Wildlife Day Trip"
     className="h-[350px] w-full object-cover"
   />
 </div>
@@ -118,23 +122,27 @@ export default function ServalWildlifePage() {
               </div>
             </div>
             <aside className="h-fit rounded-3xl bg-forest p-8 text-white shadow-xl">
-              <h2 className="text-2xl font-bold">Trip Details</h2>
+  <h2 className="text-2xl font-bold">Trip Details</h2>
 
-              <div className="mt-6 space-y-4">
-                <p><strong>Duration:</strong> Full Day</p>
-                <p><strong>Departure:</strong> Arusha / Moshi</p>
-                <p><strong>Tour Type:</strong> Private Day Trip</p>
-                <p><strong>Best Time:</strong> All Year</p>
-                <p><strong>Transport:</strong> Private Vehicle</p>
-              </div>
+  <div className="mt-6 space-y-4">
+    <p><strong>Duration:</strong> Full Day</p>
 
-              <Link
-                href="/booking"
-                className="mt-8 inline-block w-full rounded-full bg-gold px-6 py-3 text-center font-bold text-white"
-              >
-                Book This Tour
-              </Link>
-            </aside>
+    <p><strong>Departure:</strong> Zanzibar</p>
+
+    <p><strong>Tour Type:</strong> Fly-in Safari</p>
+
+    <p><strong>Best Time:</strong> All Year</p>
+
+    <p><strong>Transport:</strong> Flight & Safari Vehicle</p>
+  </div>
+
+  <Link
+    href="/booking"
+    className="mt-8 inline-block w-full rounded-full bg-gold px-6 py-3 text-center font-bold text-white"
+  >
+    Book This Tour
+  </Link>
+</aside>
           </div>
         </div>
       </section>
@@ -166,16 +174,14 @@ export default function ServalWildlifePage() {
           </div>
         </div>
       </section>
-
-<section className="bg-forest py-20 text-white">
+      <section className="bg-forest py-20 text-white">
   <div className="mx-auto max-w-4xl px-6 text-center">
     <h2 className="font-display text-4xl font-bold md:text-5xl">
-      Ready for Your Makuyuni Wildlife Adventure?
+      Ready for Your Nyerere Fly-in Adventure?
     </h2>
 
     <p className="mt-5 text-lg leading-8 text-white/80">
-      Contact Kilimanjaro Travel today and receive a tailor-made quotation for
-      your private Makuyuni Wildlife day trip.
+      Contact Kilimanjaro Travel today and receive a tailor-made quotation for your private Nyerere National Park fly-in day trip from Zanzibar.
     </p>
 
     <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -193,12 +199,13 @@ export default function ServalWildlifePage() {
         className="rounded-full border border-white px-8 py-4 font-bold text-white"
       >
         Chat on WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
-
-<Footer />
-    </main>
-  );
-}
+                    Chat on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </section>
+      
+            <Footer />
+          </main>
+        );
+      }
