@@ -11,6 +11,60 @@ const highlights = [
   'Explore Tanzania with professional safari guides',
   'Experience excellent wildlife viewing in comfort',
 ];
+const itinerary = [
+  {
+    title: 'Day 1: Arrival in Arusha',
+    text: 'Meet our representative at the airport and transfer to your luxury lodge in Arusha for relaxation and safari briefing.',
+  },
+  {
+    title: 'Day 2: Tarangire National Park',
+    text: 'Travel to Tarangire for a private game drive among large elephant herds, ancient baobab trees, and diverse wildlife.',
+  },
+  {
+    title: 'Day 3: Serengeti National Park',
+    text: 'Fly or drive to the Serengeti and enjoy an afternoon game drive before settling into a premium lodge or luxury tented camp.',
+  },
+  {
+    title: 'Day 4: Full Day in the Serengeti',
+    text: 'Spend the day exploring the Serengeti with a private guide, flexible game-drive times, and a picnic or lodge lunch.',
+  },
+  {
+    title: 'Day 5: Ngorongoro Crater',
+    text: 'Descend into the Ngorongoro Crater for exceptional wildlife viewing, then continue to a luxury lodge on the crater highlands.',
+  },
+  {
+    title: 'Day 6: Return to Arusha',
+    text: 'Enjoy a relaxed breakfast before returning to Arusha or transferring to the airport for your onward journey.',
+  },
+];
+
+const included = [
+  'Airport pickup and drop-off',
+  'Private luxury safari vehicle',
+  'Professional English-speaking guide',
+  'Premium lodge and tented-camp accommodation',
+  'Park and conservation fees',
+  'Meals during the safari',
+  'Drinking water',
+];
+
+const excluded = [
+  'International and domestic flights unless specified',
+  'Travel insurance',
+  'Visa fees',
+  'Tips and gratuities',
+  'Personal expenses',
+  'Alcoholic and premium drinks',
+];
+
+const whatToBring = [
+  'Comfortable safari clothing',
+  'Sun hat and sunscreen',
+  'Camera or binoculars',
+  'Light jacket',
+  'Travel documents',
+  'Personal medication',
+];
 
 export default function LuxurySafarisPage() {
   return (
@@ -21,7 +75,7 @@ export default function LuxurySafarisPage() {
       <PageHero
   title="Luxury Safaris"
   subtitle="Experience Tanzania in comfort with premium lodges, private safari vehicles, expert guides, and personalized service."
-  image="/images/lion.jpeg"
+  image="/images/luxury-two.jpg"
 />
 
       <section className="py-16">
@@ -61,14 +115,45 @@ export default function LuxurySafarisPage() {
                 href="/booking"
                 className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
               >
-                Book This Luxury Safari
+                Request a Tailor-Made Itinerary
               </Link>
             </div>
           </div>
         </div>
       </section>
+<section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Luxury Safari?
+    </h2>
 
-      <Footer />
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Tell us your travel dates, preferred destinations, number of travelers,
+      and accommodation preferences. Our safari experts will create a
+      personalized luxury itinerary and quotation for you.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request a Tailor-Made Itinerary
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<Footer />
     </main>
   );
 }

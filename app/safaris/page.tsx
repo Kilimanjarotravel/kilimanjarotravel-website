@@ -100,7 +100,7 @@ export default function Safaris() {
       <PageHero
   title="Tanzania Safari Packages"
   subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
-  image="/images/lion.jpeg"
+  image="/images/safari-one.jpeg"
   position="65% center"
 />
 

@@ -21,7 +21,7 @@ export default function MidRangeSafarisPage() {
       <PageHero
   title="Mid-range Safaris"
   subtitle="Enjoy excellent wildlife experiences with comfortable lodges, reliable safari vehicles, professional guides, and good value."
-  image="/images/landcruiser.jpeg"
+  image="/images/mid-rage-two.jpg"
 />
 
       <section className="py-16">
@@ -58,17 +58,46 @@ export default function MidRangeSafarisPage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Mid-range Safari
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Mid-range Safari
+</Link>
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Mid-Range Safari?
+    </h2>
 
-      <Footer />
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Share your travel dates, preferred parks, budget, and accommodation preferences. Our safari specialists will design a personalized mid-range safari itinerary that offers the perfect balance of comfort, adventure, and value.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Safari Plan
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<Footer />
     </main>
   );
 }

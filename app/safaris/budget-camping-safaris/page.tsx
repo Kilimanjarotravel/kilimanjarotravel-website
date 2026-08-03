@@ -21,7 +21,7 @@ export default function BudgetCampingSafarisPage() {
       <PageHero
   title="Budget Camping Safaris"
   subtitle="Explore Tanzania’s national parks on an affordable camping safari with professional guides, reliable vehicles, and unforgettable wildlife experiences."
-  image="/images/safari-vehicle.jpeg"
+  image="/images/budget-two.jpg"
 />
 
       <section className="py-16">
@@ -58,15 +58,44 @@ export default function BudgetCampingSafarisPage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Camping Safari
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Budget Safari
+</Link>
             </div>
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Budget Camping Safari?
+    </h2>
+
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Tell us your travel dates, preferred national parks, budget, and group size. Our safari team will create an affordable camping safari itinerary designed around your travel plans.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Budget Safari
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </main>
