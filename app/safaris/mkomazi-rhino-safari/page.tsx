@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
@@ -9,34 +10,11 @@ export default function MkomaziRhinoSafariPage() {
       <Header />
       <WhatsApp />
 
-      <section className="relative min-h-[340px] bg-[url('/images/rhino.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative mx-auto flex min-h-[340px] max-w-7xl items-center px-6 pt-24 text-white">
-          <div className="max-w-3xl">
-            <p className="font-bold uppercase tracking-[0.3em] text-gold">
-              Special Safari
-            </p>
-
-            <h1 className="mt-4 text-3xl font-bold md:text-5xl">
-              Mkomazi Rhino Safari
-            </h1>
-
-            <p className="mt-6 text-lg leading-8 text-white/90">
-              Discover Mkomazi National Park, home to rare black rhinos,
-              African wild dogs, elephants, giraffes, zebras, and beautiful
-              savannah landscapes near the Pare and Usambara Mountains.
-            </p>
-
-            <Link
-              href="/booking"
-              className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-            >
-              Book This Safari
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PageHero
+  title="Mkomazi Rhino Safari"
+  subtitle="Discover rare black rhinos, African wild dogs, elephants, birdlife, and the peaceful wilderness of Mkomazi National Park."
+  image="/images/rhino.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
@@ -81,11 +59,42 @@ export default function MkomaziRhinoSafariPage() {
               href="/booking"
               className="mt-8 inline-block rounded-full bg-forest px-8 py-4 font-bold text-white"
             >
-              Book This Safari
+              Request a Rhino Safari
             </Link>
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Mkomazi Rhino Safari?
+    </h2>
+
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Tell us your travel dates, whether you prefer a day trip or overnight safari,
+      your group size, and accommodation preferences. Our safari specialists will
+      prepare a personalized Mkomazi Rhino Safari itinerary and quotation.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Rhino Safari
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </main>

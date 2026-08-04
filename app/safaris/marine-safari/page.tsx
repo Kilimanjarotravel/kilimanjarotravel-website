@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
@@ -9,34 +10,11 @@ export default function MarineSafariPage() {
       <Header />
       <WhatsApp />
 
-      <section className="relative min-h-[340px] bg-[url('/images/marine-safari.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative mx-auto flex min-h-[340px] max-w-7xl items-center px-6 pt-24 text-white">
-          <div className="max-w-3xl">
-            <p className="font-bold uppercase tracking-[0.3em] text-gold">
-              Special Safari
-            </p>
-
-            <h1 className="mt-4 text-3xl font-bold md:text-5xl">
-              Marine Safari, Snorkeling & Diving
-            </h1>
-
-            <p className="mt-6 text-lg leading-8 text-white/90">
-  Discover the Indian Ocean through snorkeling, scuba diving, coral reefs,
-  tropical fish, sandbanks, boat trips, and relaxing beach experiences along
-  Tanzania’s beautiful coastline.
-</p>
-
-            <Link
-              href="/booking"
-              className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-            >
-              Book This Safari
-            </Link>
-          </div>
-        </div>
-      </section>
+     <PageHero
+  title="Marine Safari, Snorkeling & Diving"
+  subtitle="Discover coral reefs, tropical fish, sandbanks, boat trips, scuba diving, and relaxing beach experiences along Tanzania’s beautiful coastline."
+  image="/images/marine-two.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
@@ -81,12 +59,43 @@ export default function MarineSafariPage() {
               href="/booking"
               className="mt-8 inline-block rounded-full bg-forest px-8 py-4 font-bold text-white"
             >
-              Book This Safari
+              Request a Marine Safari
             </Link>
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Marine Adventure?
+    </h2>
 
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Share your travel dates, preferred coastal destination, group size,
+      snorkeling or diving experience, and whether you prefer a private or
+      shared trip. Our team will create a personalized marine safari and
+      quotation for you.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Marine Safari
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
       <Footer />
     </main>
   );

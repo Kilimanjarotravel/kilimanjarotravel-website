@@ -1,3 +1,4 @@
+import PageHero from '@/components/PageHero';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
@@ -9,34 +10,11 @@ export default function KenyaTanzaniaSafariPage() {
       <Header />
       <WhatsApp />
 
-      <section className="relative min-h-[340px] bg-[url('/images/kenya-tanzania.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-black/35" />
-
-        <div className="relative mx-auto flex min-h-[340px] max-w-7xl items-center px-6 pt-24 text-white">
-          <div className="max-w-3xl">
-            <p className="font-bold uppercase tracking-[0.3em] text-gold">
-              East Africa Safari
-            </p>
-
-            <h1 className="mt-4 text-3xl font-bold md:text-5xl">
-              Kenya & Tanzania Combined Safari
-            </h1>
-
-            <p className="mt-6 text-lg leading-8 text-white/90">
-              Explore the best wildlife destinations in Kenya and Tanzania in
-              one unforgettable journey, including the Maasai Mara, Serengeti,
-              Ngorongoro Crater, Amboseli, and other iconic parks.
-            </p>
-
-            <Link
-              href="/booking"
-              className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-            >
-              Book This Safari
-            </Link>
-          </div>
-        </div>
-      </section>
+      <PageHero
+  title="Kenya & Tanzania Combined Safari"
+  subtitle="Explore Maasai Mara, Serengeti, Ngorongoro Crater, Amboseli, and other iconic East African destinations in one unforgettable journey."
+  image="/images/kenya-tanzania.jpeg"
+/>
 
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
@@ -86,7 +64,37 @@ export default function KenyaTanzaniaSafariPage() {
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Kenya & Tanzania Safari?
+    </h2>
 
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Share your travel dates, preferred parks, number of days, accommodation
+      style, group size, and budget. Our safari specialists will create a
+      personalized Kenya and Tanzania itinerary and quotation for you.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Custom Itinerary
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
       <Footer />
     </main>
   );

@@ -21,7 +21,7 @@ export default function FamilySafarisPage() {
       <PageHero
   title="Family Safaris"
   subtitle="Enjoy a comfortable Tanzania safari designed for families, with flexible pacing, child-friendly accommodation, and unforgettable wildlife experiences."
-  image="/images/fleet.jpeg"
+  image="/images/family-two.jpg"
 />
 
       <section className="py-16">
@@ -37,11 +37,15 @@ export default function FamilySafarisPage() {
 </h2>
 
               <p className="mt-6 leading-8 text-black/70">
-  Enjoy an affordable Tanzania camping safari with professional guides, reliable safari vehicles, and comfortable campsites close to nature.
+  Enjoy a private Tanzania safari designed around the needs of your family,
+  with flexible schedules, comfortable accommodation, and child-friendly
+  wildlife experiences.
 </p>
 
-              <p className="mt-4 leading-8 text-black/70">
-  This safari style is ideal for adventurous travelers who want excellent wildlife viewing, authentic outdoor experiences, and good value.
+<p className="mt-4 leading-8 text-black/70">
+  Our family safaris are suitable for parents, children, and
+  multigenerational groups. We can customize the pace, destinations,
+  activities, accommodation, and travel dates to suit your family.
 </p>
             </div>
 
@@ -61,12 +65,43 @@ export default function FamilySafarisPage() {
                 href="/booking"
                 className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
               >
-                Book This Family Safari
+                Request a Family Safari
               </Link>
             </div>
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Family Safari?
+    </h2>
+
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Share your travel dates, number and ages of children, preferred parks,
+      accommodation style, and budget. Our safari specialists will create a
+      comfortable and personalized family safari itinerary for you.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Family Safari
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </main>

@@ -21,7 +21,7 @@ export default function HoneymoonSafariPage() {
       <PageHero
   title="Luxury Honeymoon Safari in Tanzania"
   subtitle="Experience Tanzania's most romantic safari with luxury lodges, private game drives, candlelight dinners, and unforgettable wildlife adventures."
-  image="/images/lion.jpeg"
+  image="/images/honeymoon-two.jpg"
 />
 
       <section className="py-16">
@@ -58,15 +58,47 @@ export default function HoneymoonSafariPage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Safari
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Honeymoon Safari
+</Link>
             </div>
           </div>
         </div>
       </section>
+      <section className="bg-forest py-20 text-white">
+  <div className="mx-auto max-w-4xl px-6 text-center">
+    <h2 className="text-4xl font-bold">
+      Ready for Your Honeymoon Safari?
+    </h2>
+
+    <p className="mt-6 text-lg leading-8 text-white/80">
+      Share your travel dates, preferred national parks, accommodation style,
+      special romantic experiences, and whether you would like to add a
+      Zanzibar beach extension. Our safari specialists will create a private
+      honeymoon itinerary and quotation for you.
+    </p>
+
+    <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <Link
+        href="/booking"
+        className="rounded-full bg-gold px-8 py-4 font-bold text-white"
+      >
+        Request Your Honeymoon Safari
+      </Link>
+
+      <a
+        href="https://wa.me/255759273339"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-white px-8 py-4 font-bold text-white"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
 
       <Footer />
     </main>
