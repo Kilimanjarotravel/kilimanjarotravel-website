@@ -68,7 +68,7 @@ export default function TwoDaysTarangireNgorongoroPage() {
       <PageHero
         title="2 Days Tarangire & Ngorongoro Safari"
         subtitle="Discover Tarangire’s elephants and baobabs, then descend into the spectacular Ngorongoro Crater."
-        image="/images/lion.jpeg"
+        image="/images/2days-hero.jpg"
       />
 
       <section className="py-20">
@@ -255,7 +255,7 @@ export default function TwoDaysTarangireNgorongoroPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/2days-two.jpg"
                 alt="Two-day Tarangire and Ngorongoro safari"
                 className="h-[420px] w-full object-cover"
               />

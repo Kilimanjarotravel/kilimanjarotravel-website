@@ -75,7 +75,7 @@ export default function ThreeDaysSerengetiNgorongoroPage() {
       <PageHero
         title="3 Days Serengeti & Ngorongoro Safari"
         subtitle="Explore the endless Serengeti plains and descend into the spectacular Ngorongoro Crater."
-        image="/images/safari-vehicle.jpeg"
+        image="/images/3days-two.jpg"
       />
 
       <section className="py-20">
@@ -256,7 +256,7 @@ export default function ThreeDaysSerengetiNgorongoroPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/landcruiser.jpeg"
+                src="/images/3days-three.jpg"
                 alt="Three-day Serengeti and Ngorongoro safari"
                 className="h-[420px] w-full object-cover"
               />

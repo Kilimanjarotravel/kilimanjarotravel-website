@@ -98,7 +98,7 @@ export default function SixDaysNorthernCircuitPage() {
       <PageHero
         title="6 Days Northern Circuit Safari"
         subtitle="Discover Tarangire, Lake Manyara, Serengeti and Ngorongoro on a complete Northern Tanzania safari."
-        image="/images/landcruiser.jpeg"
+        image="/images/6days-two.jpeg"
       />
 
       <section className="py-20">
@@ -283,7 +283,7 @@ export default function SixDaysNorthernCircuitPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/6days-one.jpg"
                 alt="Six-day Northern Circuit safari"
                 className="h-[420px] w-full object-cover"
               />

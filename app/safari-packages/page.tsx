@@ -115,7 +115,7 @@ return (
 <PageHero
 title="Tanzania Safari Packages"
 subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
-image="/images/safari.jpg"
+image="/images/safari-pax-one.jpg"
 />
 
 <section className="py-20">

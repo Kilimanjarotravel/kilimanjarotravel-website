@@ -42,32 +42,32 @@ const services = [
 const experiences = [
   [
     '3 Days Serengeti & Ngorongoro',
-    '/images/lion.jpeg',
+    '/images/fleet.jpeg',
     '/safari-packages/3-days-serengeti-ngorongoro',
   ],
   [
     '5 Days Northern Tanzania Safari',
-    '/images/landcruiser.jpeg',
+    '/images/northern-five.jpeg',
     '/safari-packages/5-days-northern-circuit',
   ],
   [
     '7 Days Great Migration Safari',
-    '/images/safari-vehicle.jpeg',
+    '/images/mara-safari.jpeg',
     '/safari-packages/7-days-northern-circuit',
   ],
   [
     '6 Days Machame Route',
-    '/images/fleet.jpeg',
+    '/images/machame-two.jpeg',
     '/kilimanjaro-treks',
   ],
   [
     '8 Days Lemosho Route',
-    '/images/landcruiser.jpeg',
+    '/images/lemosho-two.jpeg',
     '/kilimanjaro-treks',
   ],
   [
     '5 Days Zanzibar Holiday',
-    '/images/zanzibar.jpeg',
+    '/images/zanzibar-two.jpeg',
     '/zanzibar',
   ],
 ];
@@ -162,10 +162,10 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:items-center">
           <div className="card overflow-hidden">
             <img
-              src="/images/lion.jpeg"
-              className="h-[520px] w-full object-cover"
-              alt="Lions in Tanzania"
-            />
+  src="/images/why-choose-us.jpg"
+  className="h-[520px] w-full object-cover"
+  alt="Kilimanjaro Travel safari team and vehicle"
+/>
           </div>
 
           <div>

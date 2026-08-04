@@ -83,9 +83,8 @@ export default function FourDaysTarangireSerengetiNgorongoroPage() {
       <PageHero
         title="4 Days Tarangire, Serengeti & Ngorongoro Safari"
         subtitle="Explore elephant country, the endless Serengeti plains and the spectacular Ngorongoro Crater."
-        image="/images/lion.jpeg"
-      />
-
+         image="/images/4days-one.jpg"
+/>
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-12 md:grid-cols-3">
@@ -269,7 +268,7 @@ export default function FourDaysTarangireSerengetiNgorongoroPage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div className="overflow-hidden rounded-3xl shadow-xl">
               <img
-                src="/images/safari-vehicle.jpeg"
+                src="/images/4days-two.jpg"
                 alt="Four-day Tarangire Serengeti and Ngorongoro safari"
                 className="h-[420px] w-full object-cover"
               />
