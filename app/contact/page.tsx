@@ -10,10 +10,10 @@ export default function Contact() {
       <WhatsApp />
 
       <PageHero
-        title="Plan Your Adventure"
-        subtitle="Send us your travel request and our team will respond quickly."
-        image="/images/landcruiser.jpeg"
-      />
+  title="Contact Us"
+  subtitle="We're here to help you plan your perfect Tanzania adventure. Get in touch with our travel specialists today."
+  image="/images/mara.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2">
