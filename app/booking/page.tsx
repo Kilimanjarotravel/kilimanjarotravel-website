@@ -13,14 +13,20 @@ export default function Booking() {
     const form = new FormData(event.currentTarget);
 
     const name = form.get('name');
-    const email = form.get('email');
-    const phone = form.get('phone');
-    const country = form.get('country');
-    const service = form.get('service');
-    const travelers = form.get('travelers');
-    const travelDate = form.get('travelDate');
-    const budget = form.get('budget');
-    const message = form.get('message');
+const email = form.get('email');
+const phone = form.get('phone');
+const country = form.get('country');
+const service = form.get('service');
+
+const adults = form.get('adults');
+const children = form.get('children');
+const childrenAges = form.get('childrenAges');
+
+const arrivalDate = form.get('arrivalDate');
+const departureDate = form.get('departureDate');
+
+const travelStyle = form.get('travelStyle');
+const message = form.get('message');
 
     const whatsappMessage = `
 Hello Kilimanjaro Travel,
@@ -32,9 +38,12 @@ Email: ${email}
 WhatsApp Number: ${phone}
 Country: ${country}
 Service: ${service}
-Number of Travelers: ${travelers}
-Travel Date: ${travelDate}
-Budget Range: ${budget}
+Adults: ${adults}
+Children: ${children}
+Children's Ages: ${childrenAges}
+Arrival Date: ${arrivalDate}
+Departure Date: ${departureDate}
+Travel Style: ${travelStyle}
 
 Trip Details:
 ${message}
@@ -53,10 +62,10 @@ ${message}
       <WhatsApp />
 
       <PageHero
-        title="Request a Quote"
-        subtitle="Tell us about your dream Tanzania trip and our team will prepare a tailor-made offer."
-        image="/images/landcruiser.jpeg"
-      />
+  title="Request a Quote"
+  subtitle="Tell us about your travel plans and our team will prepare a personalized itinerary and quotation for you."
+  image="/images/booking-hero.jpg"
+/>
 
       <section className="py-20">
         <div className="mx-auto max-w-4xl px-6">
@@ -95,50 +104,88 @@ ${message}
               />
 
               <select
-                name="service"
-                required
-                className="rounded-xl border p-4"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Select Travel Service
-                </option>
-                <option>Safari</option>
-                <option>Kilimanjaro Trek</option>
-                <option>Zanzibar Holiday</option>
-                <option>Car Hire</option>
-                <option>Honeymoon Package</option>
-              </select>
+  name="service"
+  required
+  className="rounded-xl border p-4"
+  defaultValue=""
+>
+  <option value="" disabled>
+    Select Travel Service
+  </option>
+
+  <option>Safari</option>
+  <option>Kilimanjaro Trek</option>
+  <option>Zanzibar Holiday</option>
+  <option>Honeymoon Package</option>
+  <option>Mountain Adventure</option>
+  <option>Day Trip</option>
+  <option>Local Tour</option>
+  <option>Car Hire</option>
+  <option>Airport Transfer</option>
+</select>
 
               <input
-                name="travelers"
-                type="number"
-                min="1"
-                required
-                className="rounded-xl border p-4"
-                placeholder="Number of Travelers"
-              />
+  name="adults"
+  type="number"
+  min="1"
+  required
+  className="rounded-xl border p-4"
+  placeholder="Number of Adults"
+/>
+
+<input
+  name="children"
+  type="number"
+  min="0"
+  className="rounded-xl border p-4"
+  placeholder="Number of Children"
+/>
+
+<input
+  name="childrenAges"
+  className="rounded-xl border p-4"
+  placeholder="Children's Ages (if any)"
+/>
 
               <input
-                name="travelDate"
-                type="date"
-                required
-                className="rounded-xl border p-4"
-              />
+  name="arrivalDate"
+  type="date"
+  required
+  aria-label="Arrival Date"
+  className="rounded-xl border p-4"
+/>
 
-              <input
-                name="budget"
-                className="rounded-xl border p-4"
-                placeholder="Budget Range"
-              />
-            </div>
+<input
+  name="departureDate"
+  type="date"
+  required
+  aria-label="Departure Date"
+  className="rounded-xl border p-4"
+/>
 
-            <textarea
-              name="message"
-              required
-              className="mt-5 h-40 w-full rounded-xl border p-4"
-              placeholder="Tell us about your trip"
-            />
+              <select
+  name="travelStyle"
+  required
+  className="rounded-xl border p-4"
+  defaultValue=""
+>
+  <option value="" disabled>
+    Select Travel Style
+  </option>
+  <option>Budget</option>
+  <option>Mid-Range</option>
+  <option>Luxury</option>
+  <option>Not Sure</option>
+</select>
+
+</div>
+
+<textarea
+  name="message"
+  required
+  className="mt-5 h-40 w-full rounded-xl border p-4"
+  placeholder="Tell us about your trip, preferred destinations, activities, accommodation, or any special requests"
+/>
 
             <button type="submit" className="btn-gold mt-6 w-full">
               Send Request on WhatsApp
