@@ -21,7 +21,7 @@ export default function MnembaSnorkelingPage() {
       <PageHero
   title="Mnemba Island Snorkeling"
   subtitle="Explore clear turquoise waters, colorful coral reefs, and tropical marine life near Mnemba Island."
-  image="/images/zanzibar.jpeg"
+  image="/images/mnemba-snorkeling.jpg"
 />
 
       <section className="py-16">
@@ -36,13 +36,30 @@ export default function MnembaSnorkelingPage() {
   Explore the Waters Around Mnemba Island
 </h2>
 
-              <p className="mt-6 leading-8 text-black/70">
-                Take a boat trip to the waters near Mnemba Island and enjoy snorkeling in clear turquoise water filled with colorful fish, coral reefs, and tropical marine life.
-              </p>
+              <p className="mt-4 leading-8 text-black/70">
+  The tour is suitable for beginners and experienced swimmers, with local guides providing snorkeling equipment and safety support throughout the experience.
+</p>
+<div className="mt-8 grid gap-4 sm:grid-cols-2">
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Duration
+    </p>
 
-               <p className="mt-4 leading-8 text-black/70">
-                The tour is suitable for beginners and experienced swimmers, with local guides providing snorkeling equipment and safety support throughout the experience.
-              </p>
+    <p className="mt-2 text-xl font-bold">
+      Half Day
+    </p>
+  </div>
+
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Experience
+    </p>
+
+    <p className="mt-2 text-xl font-bold">
+      Marine & Snorkeling
+    </p>
+  </div>
+</div>
             </div>
 
             <div className="rounded-3xl bg-cream p-8 shadow-lg">
@@ -61,7 +78,7 @@ export default function MnembaSnorkelingPage() {
                 href="/booking"
                 className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
               >
-                Book This Tour
+                Request a Quote
               </Link>
             </div>
           </div>

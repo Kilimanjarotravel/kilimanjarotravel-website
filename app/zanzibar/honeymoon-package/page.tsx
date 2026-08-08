@@ -21,7 +21,7 @@ export default function ZanzibarHoneymoonPackagePage() {
       <PageHero
   title="Zanzibar Honeymoon Package"
   subtitle="Celebrate your honeymoon with romantic beaches, private experiences, tropical sunsets, and unforgettable island moments."
-  image="/images/zanzibar.jpeg"
+  image="/images/zanzibar-honeymoon.jpg"
 />
 
       <section className="py-16">
@@ -36,9 +36,30 @@ export default function ZanzibarHoneymoonPackagePage() {
   Celebrate Your Honeymoon in Zanzibar
 </h2>
 
-              <p className="mt-6 leading-8 text-black/70">
-               Celebrate your honeymoon on the beautiful island of Zanzibar with white-sand beaches, turquoise waters, romantic sunsets, and carefully selected beachfront accommodation.
-              </p>
+              <p className="mt-4 leading-8 text-black/70">
+  Enjoy private moments, relaxing beach days, romantic dinners, island excursions, and personalized experiences designed to create unforgettable memories together.
+</p>
+<div className="mt-8 grid gap-4 sm:grid-cols-2">
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Duration
+    </p>
+
+    <p className="mt-2 text-xl font-bold">
+      5–7 Days
+    </p>
+  </div>
+
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Experience
+    </p>
+
+    <p className="mt-2 text-xl font-bold">
+      Romantic
+    </p>
+  </div>
+</div>
 
                <p className="mt-4 leading-8 text-black/70">
                Enjoy private moments, relaxing beach days, romantic dinners, island excursions, and personalized experiences designed to create unforgettable memories together.
@@ -58,11 +79,11 @@ export default function ZanzibarHoneymoonPackagePage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Honeymoon
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Quote
+</Link>
             </div>
           </div>
         </div>

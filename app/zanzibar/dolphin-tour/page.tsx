@@ -21,7 +21,7 @@ export default function DolphinTourPage() {
       <PageHero
   title="Zanzibar Dolphin Tour"
   subtitle="Enjoy a boat trip along Zanzibar’s coast and search for dolphins in their natural environment."
-  image="/images/zanzibar.jpeg"
+  image="/images/dolphin-tour.jpg"
 />
 
       <section className="py-16">
@@ -36,13 +36,30 @@ export default function DolphinTourPage() {
   Search for Dolphins Along Zanzibar’s Coast
 </h2>
 
-              <p className="mt-6 leading-8 text-black/70">
-                Take a scenic boat trip along Zanzibar’s coast and search for dolphins in their natural environment while enjoying beautiful ocean views.
-              </p>
+              <p className="mt-4 leading-8 text-black/70">
+  The tour is led by experienced local guides and focuses on respectful wildlife viewing. Dolphin sightings depend on natural conditions and cannot be guaranteed.
+</p>
+<div className="mt-8 grid gap-4 sm:grid-cols-2">
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Duration
+    </p>
 
-               <p className="mt-4 leading-8 text-black/70">
-                The tour is led by experienced local guides and focuses on respectful wildlife viewing. Dolphin sightings depend on natural conditions and cannot be guaranteed.
-              </p>
+    <p className="mt-2 text-xl font-bold">
+      Half Day
+    </p>
+  </div>
+
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Experience
+    </p>
+
+    <p className="mt-2 text-xl font-bold">
+      Ocean & Wildlife
+    </p>
+  </div>
+</div>
             </div>
 
             <div className="rounded-3xl bg-cream p-8 shadow-lg">
@@ -58,11 +75,11 @@ export default function DolphinTourPage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Tour
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Quote
+</Link>
             </div>
           </div>
         </div>

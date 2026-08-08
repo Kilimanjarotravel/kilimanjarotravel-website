@@ -21,7 +21,7 @@ export default function StoneTownSpiceTourPage() {
       <PageHero
   title="Stone Town & Spice Tour"
   subtitle="Explore historic Stone Town, vibrant local markets, and Zanzibar's famous spice farms."
-  image="/images/zanzibar.jpeg"
+  image="/images/stone-town.jpg"
 />
 
       <section className="py-16">
@@ -36,13 +36,30 @@ export default function StoneTownSpiceTourPage() {
   Discover Stone Town and Zanzibar’s Spices
 </h2>
 
-              <p className="mt-6 leading-8 text-black/70">
-                Walk through the narrow streets of historic Stone Town and discover old buildings, colorful markets, local shops, and the rich cultural heritage of Zanzibar.
-              </p>
+              <p className="mt-4 leading-8 text-black/70">
+  Continue to a spice farm to see, smell, and taste tropical spices, fruits, and plants while learning why Zanzibar is known as the Spice Island.
+</p>
+<div className="mt-8 grid gap-4 sm:grid-cols-2">
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Duration
+    </p>
 
-               <p className="mt-4 leading-8 text-black/70">
-                Continue to a spice farm to see, smell, and taste tropical spices, fruits, and plants while learning why Zanzibar is known as the Spice Island.
-              </p>
+    <p className="mt-2 text-xl font-bold">
+      1 Day
+    </p>
+  </div>
+
+  <div className="rounded-2xl bg-cream p-5">
+    <p className="text-sm font-bold uppercase tracking-widest text-gold">
+      Experience
+    </p>
+
+    <p className="mt-2 text-xl font-bold">
+      Cultural
+    </p>
+  </div>
+</div>
             </div>
 
             <div className="rounded-3xl bg-cream p-8 shadow-lg">
@@ -58,11 +75,11 @@ export default function StoneTownSpiceTourPage() {
               </ul>
 
               <Link
-                href="/booking"
-                className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
-              >
-                Book This Tour
-              </Link>
+  href="/booking"
+  className="mt-8 inline-block rounded-full bg-gold px-8 py-4 font-bold text-white"
+>
+  Request a Quote
+</Link>
             </div>
           </div>
         </div>
