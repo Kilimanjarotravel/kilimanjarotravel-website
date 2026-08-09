@@ -7,37 +7,43 @@ import PageHero from '@/components/PageHero';
 import type { FormEvent } from 'react';
 
 export default function Contact() {
-  function sendToWhatsApp(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  async function sendToEmail(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault();
 
-    const form = new FormData(event.currentTarget);
+  const form = new FormData(event.currentTarget);
 
-    const name = form.get('name');
-    const email = form.get('email');
-    const country = form.get('country');
-    const service = form.get('service');
-    const message = form.get('message');
+  const data = {
+    name: form.get('name'),
+    email: form.get('email'),
+    country: form.get('country'),
+    service: form.get('service'),
+    message: form.get('message'),
+  };
 
-    const whatsappMessage = `
-Hello Kilimanjaro Travel,
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-I would like to get in touch.
+    const result = await response.json();
 
-Name: ${name}
-Email: ${email}
-Country: ${country}
-Service: ${service}
+    if (!response.ok) {
+      alert(result.error || 'Failed to send message.');
+      return;
+    }
 
-Message:
-${message}
-    `;
+    alert('Message sent successfully! Thank you for contacting us.');
 
-    const whatsappUrl =
-      'https://wa.me/255759273339?text=' +
-      encodeURIComponent(whatsappMessage);
-
-    window.open(whatsappUrl, '_blank');
+    event.currentTarget.reset();
+  } catch (error) {
+    console.error(error);
+    alert('Something went wrong. Please try again.');
   }
+}
 
   return (
     <main>
@@ -72,7 +78,7 @@ ${message}
           </div>
 
           <form
-  onSubmit={sendToWhatsApp}
+  onSubmit={sendToEmail}
   className="card p-8"
 >
   <input
@@ -125,11 +131,11 @@ ${message}
   />
 
   <button
-    type="submit"
-    className="btn-gold w-full"
-  >
-    Send Message on WhatsApp
-  </button>
+  type="submit"
+  className="btn-gold w-full"
+>
+  Send Message
+</button>
 </form>
         </div>
       </section>
