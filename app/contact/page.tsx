@@ -1,9 +1,44 @@
+'use client';
+
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
 import PageHero from '@/components/PageHero';
+import type { FormEvent } from 'react';
 
 export default function Contact() {
+  function sendToWhatsApp(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = new FormData(event.currentTarget);
+
+    const name = form.get('name');
+    const email = form.get('email');
+    const country = form.get('country');
+    const service = form.get('service');
+    const message = form.get('message');
+
+    const whatsappMessage = `
+Hello Kilimanjaro Travel,
+
+I would like to get in touch.
+
+Name: ${name}
+Email: ${email}
+Country: ${country}
+Service: ${service}
+
+Message:
+${message}
+    `;
+
+    const whatsappUrl =
+      'https://wa.me/255759273339?text=' +
+      encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappUrl, '_blank');
+  }
+
   return (
     <main>
       <Header />
@@ -12,7 +47,7 @@ export default function Contact() {
       <PageHero
   title="Contact Us"
   subtitle="We're here to help you plan your perfect Tanzania adventure. Get in touch with our travel specialists today."
-  image="/images/mara.jpg"
+  image="/images/contact-hero.jpg"
 />
 
       <section className="py-20">
@@ -36,27 +71,66 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className="card p-8">
-            <input className="mb-4 w-full rounded-xl border p-4" placeholder="Full Name" />
-            <input className="mb-4 w-full rounded-xl border p-4" placeholder="Email Address" />
-            <input className="mb-4 w-full rounded-xl border p-4" placeholder="Country" />
+          <form
+  onSubmit={sendToWhatsApp}
+  className="card p-8"
+>
+  <input
+    name="name"
+    required
+    className="mb-4 w-full rounded-xl border p-4"
+    placeholder="Full Name"
+  />
 
-            <select className="mb-4 w-full rounded-xl border p-4">
-              <option>Safari</option>
-              <option>Kilimanjaro Trek</option>
-              <option>Zanzibar</option>
-              <option>Car Hire</option>
-            </select>
+  <input
+    name="email"
+    type="email"
+    required
+    className="mb-4 w-full rounded-xl border p-4"
+    placeholder="Email Address"
+  />
 
-            <textarea
-              className="mb-4 h-36 w-full rounded-xl border p-4"
-              placeholder="Tell us about your trip"
-            />
+  <input
+    name="country"
+    required
+    className="mb-4 w-full rounded-xl border p-4"
+    placeholder="Country"
+  />
 
-            <button type="submit" className="btn-gold w-full">
-              Request Quote
-            </button>
-          </form>
+  <select
+    name="service"
+    required
+    className="mb-4 w-full rounded-xl border p-4"
+    defaultValue=""
+  >
+    <option value="" disabled>
+      Select Travel Service
+    </option>
+    <option>Safari</option>
+    <option>Kilimanjaro Trek</option>
+    <option>Mountain Adventure</option>
+    <option>Day Trip</option>
+    <option>Local Tour</option>
+    <option>Zanzibar Holiday</option>
+    <option>Car Hire</option>
+    <option>Airport Transfer</option>
+    <option>Honeymoon Package</option>
+  </select>
+
+  <textarea
+    name="message"
+    required
+    className="mb-4 h-36 w-full rounded-xl border p-4"
+    placeholder="How can we help you?"
+  />
+
+  <button
+    type="submit"
+    className="btn-gold w-full"
+  >
+    Send Message on WhatsApp
+  </button>
+</form>
         </div>
       </section>
 
