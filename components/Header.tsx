@@ -11,7 +11,6 @@ const links = [
   ['Mountain Adventures', '/mountain-adventures'],
   ['Cultural Tours', '/cultural-tours'],
   ['Day Trips', '/day-trips'],
-  ['Gallery', '/gallery'],
   ['Testimonials', '/testimonials'],
   ['FAQ', '/faq'],
   ['Zanzibar', '/zanzibar'],
@@ -53,13 +52,6 @@ export default function Header() {
               {label}
             </Link>
           ))}
-
-          <a
-            href="https://wa.me/255759273339"
-            className="rounded-full bg-gold px-3 py-2 font-bold text-white"
-          >
-            WhatsApp
-          </a>
         </nav>
       </div>
 
@@ -76,13 +68,6 @@ export default function Header() {
                 {label}
               </Link>
             ))}
-
-            <a
-              href="https://wa.me/255759273339"
-              className="mt-2 rounded-full bg-gold px-4 py-3 text-center font-bold text-white"
-            >
-              WhatsApp
-            </a>
           </div>
         </div>
       )}

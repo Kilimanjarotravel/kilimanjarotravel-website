@@ -2,15 +2,25 @@ export async function POST(request: Request) {
 try {
 const body = await request.json();
 
-const name = body.name;
-const email = body.email;
-const country = body.country;
-const service = body.service;
-const message = body.message;
+const {
+name,
+email,
+country,
+service,
+adults,
+children,
+childrenAges,
+arrivalDate,
+departureDate,
+travelStyle,
+message,
+} = body;
 
 if (!name || !email || !country || !service || !message) {
 return Response.json(
-{ error: 'Please fill in all fields.' },
+{
+error: 'Please fill in all required fields.',
+},
 { status: 400 }
 );
 }
@@ -19,20 +29,35 @@ const apiKey = process.env.RESEND_API_KEY;
 
 if (!apiKey) {
 return Response.json(
-{ error: 'Email service is not configured.' },
+{
+error: 'Email service is not configured.',
+},
 { status: 500 }
 );
 }
 
-const emailText =
-'Hello Kilimanjaro Travel,\n\n' +
-'You have received a new travel enquiry.\n\n' +
-'Name: ' + name + '\n' +
-'Email: ' + email + '\n' +
-'Country: ' + country + '\n' +
-'Service: ' + service + '\n\n' +
-'Message:\n' +
-message;
+const emailText = `
+Hello Kilimanjaro Travel,
+
+You have received a new booking request.
+
+Name: ${name}
+Email: ${email}
+Country: ${country}
+Service: ${service}
+
+Adults: ${adults || 'Not specified'}
+Children: ${children || '0'}
+Children's Ages: ${childrenAges || 'Not specified'}
+
+Arrival Date: ${arrivalDate || 'Not specified'}
+Departure Date: ${departureDate || 'Not specified'}
+
+Travel Style: ${travelStyle || 'Not specified'}
+
+Trip Details:
+${message}
+`;
 
 const response = await fetch(
 'https://api.resend.com/emails',
@@ -40,13 +65,13 @@ const response = await fetch(
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
-Authorization: 'Bearer ' + apiKey,
+Authorization: `Bearer ${apiKey}`,
 },
 body: JSON.stringify({
 from: 'Kilimanjaro Travel <onboarding@resend.dev>',
 to: ['kilimanjarotravel.tz@gmail.com'],
 reply_to: email,
-subject: 'New Travel Enquiry - ' + service,
+subject: `New Booking Request - ${service}`,
 text: emailText,
 }),
 }
@@ -58,20 +83,27 @@ const error = await response.text();
 console.error('Resend error:', error);
 
 return Response.json(
-{ error: 'Failed to send email.' },
+{
+error: 'Failed to send booking email.',
+},
 { status: 500 }
 );
 }
 
 return Response.json(
-{ success: true },
+{
+success: true,
+},
 { status: 200 }
 );
+
 } catch (error) {
-console.error('Contact API error:', error);
+console.error('Booking API error:', error);
 
 return Response.json(
-{ error: 'Something went wrong.' },
+{
+error: 'Something went wrong while sending the booking.',
+},
 { status: 500 }
 );
 }

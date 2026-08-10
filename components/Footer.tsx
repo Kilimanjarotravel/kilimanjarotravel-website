@@ -6,11 +6,14 @@ import {
   Phone,
   Youtube,
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className="bg-forest text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-3">
+        
+        {/* Company */}
         <div>
           <img
             src="/images/logo.png"
@@ -18,7 +21,9 @@ export default function Footer() {
             className="mb-6 h-24 w-auto object-contain"
           />
 
-          <p className="mt-2 text-gold">See More. Feel More.</p>
+          <p className="mt-2 text-gold">
+            See More. Feel More.
+          </p>
 
           <p className="mt-4 text-white/75">
             Operated by Kilimanjaro Travel Car Hire Limited.
@@ -67,24 +72,26 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Services */}
         <div>
-          <h4 className="font-bold text-gold">Services</h4>
+          <h4 className="font-bold text-gold">
+            Services
+          </h4>
 
-          <p className="mt-4 leading-8 text-white/80">
-            Safaris
-            <br />
-            Kilimanjaro Treks
-            <br />
-            Zanzibar Holidays
-            <br />
-            Car Hire
-            <br />
-            Cultural Tours
-          </p>
+          <div className="mt-4 space-y-2 text-white/80">
+            <p>Safaris</p>
+            <p>Kilimanjaro Treks</p>
+            <p>Zanzibar Holidays</p>
+            <p>Car Hire</p>
+            <p>Cultural Tours</p>
+          </div>
         </div>
 
+        {/* Contact */}
         <div>
-          <h4 className="font-bold text-gold">Contact</h4>
+          <h4 className="font-bold text-gold">
+            Contact
+          </h4>
 
           <p className="mt-4 flex gap-3">
             <Phone size={20} />
@@ -103,8 +110,35 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Legal Links */}
+      <div className="border-t border-white/10">
+        <div className="flex flex-wrap justify-center gap-6 px-6 py-5 text-sm text-white/70">
+          <Link
+            href="/terms"
+            className="transition hover:text-gold"
+          >
+            Terms & Conditions
+          </Link>
+
+          <Link
+            href="/privacy"
+            className="transition hover:text-gold"
+          >
+            Privacy Policy
+          </Link>
+
+          <Link
+            href="/contact"
+            className="transition hover:text-gold"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </div>
+
+      {/* Copyright */}
       <div className="border-t border-white/10 py-5 text-center text-sm text-white/60">
-        © Kilimanjaro Travel. All rights reserved.
+        © {new Date().getFullYear()} Kilimanjaro Travel. All rights reserved.
       </div>
     </footer>
   );

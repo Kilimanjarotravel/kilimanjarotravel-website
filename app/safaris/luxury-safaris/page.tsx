@@ -75,7 +75,7 @@ export default function LuxurySafarisPage() {
       <PageHero
   title="Luxury Safaris"
   subtitle="Experience Tanzania in comfort with premium lodges, private safari vehicles, expert guides, and personalized service."
-  image="/images/luxury-two.jpg"
+  image="/images/Luxury-five.jpg"
 />
 
       <section className="py-16">

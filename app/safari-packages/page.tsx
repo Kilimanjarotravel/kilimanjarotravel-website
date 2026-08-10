@@ -104,8 +104,40 @@ price: '$1,520',
   badgeColor: 'bg-indigo-600',
   price: '$2,850',
 },
-];
-
+{
+  title: '12 Days Honeymoon Safari & Zanzibar',
+  image: '/images/honeymoon-safari.jpg',
+  description:
+    'Enjoy a romantic Tanzania honeymoon combining an unforgettable safari through Tarangire, Lake Manyara, Serengeti and Ngorongoro with a relaxing Zanzibar beach escape.',
+  href: '/safari-packages/12-days-honeymoon-safari-zanzibar',
+  ready: true,
+  badge: 'Honeymoon',
+  badgeColor: 'bg-pink-600',
+  price: '$4,250',
+},
+{
+  title: '14 Days Safari + Zanzibar',
+  image: '/images/safari-zanzibar.jpg',
+  description:
+    'Experience the best of Tanzania with a Northern Circuit safari followed by a relaxing Zanzibar beach escape.',
+  href: '/safari-packages/14-days-safari-zanzibar',
+  ready: true,
+  badge: 'Ultimate Experience',
+  badgeColor: 'bg-gold',
+  price: '$5,250',
+},
+{
+  title: '16 Days Kenya + Tanzania Safari',
+  image: '/images/pumba.jpg',
+  description:
+    'Discover the highlights of Kenya and Tanzania on an unforgettable private safari through Amboseli, Lake Naivasha, Maasai Mara, Serengeti, Ngorongoro and Tarangire.',
+  href: '/safari-packages/16-days-kenya-tanzania',
+  ready: true,
+  badge: 'East Africa',
+  badgeColor: 'bg-forest',
+  price: '$5,050',
+},
+]
 export default function SafariPackagesPage() {
 return (
 <main>
@@ -115,7 +147,7 @@ return (
 <PageHero
 title="Tanzania Safari Packages"
 subtitle="Choose from our carefully designed safari packages across Northern Tanzania."
-image="/images/safari-pax-one.jpg"
+image="/images/honeymoon-two.jpg"
 />
 
 <section className="py-20">
