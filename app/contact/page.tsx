@@ -53,7 +53,7 @@ export default function Contact() {
       <PageHero
   title="Contact Us"
   subtitle="We're here to help you plan your perfect Tanzania adventure. Get in touch with our travel specialists today."
-  image="/images/contact-hero.jpg"
+  image="/images/book-six.jpg"
 />
 
       <section className="py-20">
