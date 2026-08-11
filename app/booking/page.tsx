@@ -25,6 +25,16 @@ export default function Booking() {
     const travelStyle = form.get('travelStyle');
     const message = form.get('message');
 
+    // Check that departure date is after arrival date
+    if (
+      arrivalDate &&
+      departureDate &&
+      new Date(departureDate as string) <= new Date(arrivalDate as string)
+    ) {
+      alert('Departure Date must be after Arrival Date.');
+      return;
+    }
+
     const bookingData = {
       name,
       email,
@@ -65,7 +75,7 @@ Email: ${email}
 Country: ${country}
 Service: ${service}
 Adults: ${adults}
-Children: ${children}
+Children: ${children || '0'}
 Children's Ages: ${childrenAges || 'None'}
 Arrival Date: ${arrivalDate}
 Departure Date: ${departureDate}
@@ -95,6 +105,7 @@ ${message}
   return (
     <main>
       <Header />
+
       <WhatsApp />
 
       <PageHero
@@ -105,12 +116,15 @@ ${message}
 
       <section className="py-20">
         <div className="mx-auto max-w-4xl px-6">
+
           <form
             onSubmit={sendToBooking}
             className="rounded-3xl bg-white p-8 shadow-xl"
           >
+
             <div className="grid gap-5 md:grid-cols-2">
 
+              {/* Full Name */}
               <input
                 name="name"
                 required
@@ -118,6 +132,7 @@ ${message}
                 placeholder="Full Name"
               />
 
+              {/* Email */}
               <input
                 name="email"
                 type="email"
@@ -126,6 +141,7 @@ ${message}
                 placeholder="Email Address"
               />
 
+              {/* Country */}
               <input
                 name="country"
                 required
@@ -133,6 +149,7 @@ ${message}
                 placeholder="Country"
               />
 
+              {/* Service */}
               <select
                 name="service"
                 required
@@ -142,6 +159,7 @@ ${message}
                 <option value="" disabled>
                   Select Travel Service
                 </option>
+
                 <option>Safari</option>
                 <option>Kilimanjaro Trek</option>
                 <option>Zanzibar Holiday</option>
@@ -153,6 +171,7 @@ ${message}
                 <option>Airport Transfer</option>
               </select>
 
+              {/* Adults */}
               <input
                 name="adults"
                 type="number"
@@ -162,20 +181,24 @@ ${message}
                 placeholder="Number of Adults"
               />
 
+              {/* Children */}
               <input
                 name="children"
                 type="number"
                 min="0"
+                defaultValue="0"
                 className="rounded-xl border p-4"
                 placeholder="Number of Children"
               />
 
+              {/* Children Ages */}
               <input
                 name="childrenAges"
                 className="rounded-xl border p-4"
                 placeholder="Children's Ages (if any)"
               />
 
+              {/* Arrival Date */}
               <input
                 name="arrivalDate"
                 type="date"
@@ -184,6 +207,7 @@ ${message}
                 aria-label="Arrival Date"
               />
 
+              {/* Departure Date */}
               <input
                 name="departureDate"
                 type="date"
@@ -192,6 +216,7 @@ ${message}
                 aria-label="Departure Date"
               />
 
+              {/* Travel Style */}
               <select
                 name="travelStyle"
                 required
@@ -201,6 +226,7 @@ ${message}
                 <option value="" disabled>
                   Select Travel Style
                 </option>
+
                 <option>Budget</option>
                 <option>Mid-Range</option>
                 <option>Luxury</option>
@@ -209,6 +235,7 @@ ${message}
 
             </div>
 
+            {/* Trip Details */}
             <textarea
               name="message"
               required
@@ -216,13 +243,16 @@ ${message}
               placeholder="Tell us about your trip, preferred destinations, activities, accommodation, or any special requests"
             />
 
+            {/* Submit */}
             <button
               type="submit"
               className="btn-gold mt-6 w-full"
             >
               Send Request by Email & WhatsApp
             </button>
+
           </form>
+
         </div>
       </section>
 

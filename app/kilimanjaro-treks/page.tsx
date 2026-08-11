@@ -16,7 +16,7 @@ const routes = [
     'Lemosho Route',
     '7–8 Days',
     'Scenic and highly recommended',
-    '/images/lemosho-five.jpg',
+    '/images/lemosho-five.JPG',
     '/kilimanjaro-treks/lemosho-route',
   ],
   [
@@ -27,12 +27,12 @@ const routes = [
     '/kilimanjaro-treks/marangu-route',
   ],
   [
-    'Rongai Route',
-    '6–7 Days',
-    'Quiet northern approach',
-    '/images/rongai-five.jpg',
-    '/kilimanjaro-treks/rongai-route',
-  ],
+  'Rongai Route',
+  '6–7 Days',
+  'Quiet northern approach',
+  '/images/rongai-five.jpg',
+  '/kilimanjaro-treks/rongai-route',
+],
   [
     'Northern Circuit',
     '8–9 Days',
