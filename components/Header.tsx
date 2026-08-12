@@ -24,7 +24,9 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 return (
 <header className="fixed left-0 top-0 z-50 w-full bg-forest shadow-lg">
-<div className="flex w-full items-center gap-4 px-4 py-3">
+<div className="flex w-full items-center gap-4 px-4 py-2">
+
+{/* Logo */}
 <Link href="/" className="shrink-0">
 <img
 src="/images/logo.png"
@@ -33,28 +35,44 @@ className="h-16 w-auto object-contain"
 />
 </Link>
 
+{/* Mobile Menu Button */}
 <button
 type="button"
 onClick={() => setMenuOpen(!menuOpen)}
-className="ml-auto rounded-lg px-3 py-2 text-2xl text-white lg:hidden"
+className="ml-auto rounded-lg px-3 py-2 text-3xl text-white lg:hidden"
 aria-label="Open menu"
+aria-expanded={menuOpen}
 >
 ☰
 </button>
 
-<nav className="hidden flex-1 items-center justify-end gap-5 text-base font-semibold text-white lg:flex">
-{links.map(([label, href]) => (
+{/* Desktop Navigation */}
+<nav className="hidden flex-1 items-center justify-end gap-5 text-sm font-semibold text-white lg:flex">
+{links.map(([label, href]) => {
+const words = label.split(' ');
+
+return (
 <Link
 key={href}
 href={href}
-className="whitespace-nowrap text-white transition hover:text-gold"
+className="whitespace-nowrap text-center leading-tight text-white transition hover:text-gold"
 >
-{label}
+{words.length > 1 ? (
+<>
+{words[0]}
+<br />
+{words.slice(1).join(' ')}
+</>
+) : (
+label
+)}
 </Link>
-))}
+);
+})}
 </nav>
 </div>
 
+{/* Mobile Navigation */}
 {menuOpen && (
 <div className="absolute left-0 top-full w-full bg-forest px-6 py-4 shadow-lg lg:hidden">
 <div className="flex max-h-[75vh] flex-col gap-4 overflow-y-auto">
@@ -63,7 +81,7 @@ className="whitespace-nowrap text-white transition hover:text-gold"
 key={href}
 href={href}
 onClick={() => setMenuOpen(false)}
-className="text-base font-semibold text-white transition hover:text-gold"
+className="text-lg font-semibold text-white transition hover:text-gold"
 >
 {label}
 </Link>
