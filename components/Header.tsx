@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -19,97 +17,85 @@ const links = [
 ['Contact', '/contact'],
 ];
 
-const languages = [
-{ code: 'EN', name: 'English', flag: '🇬🇧' },
-{ code: 'DE', name: 'Deutsch', flag: '🇩🇪' },
-{ code: 'FR', name: 'Français', flag: '🇫🇷' },
-{ code: 'ES', name: 'Español', flag: '🇪🇸' },
-];
-
 export default function Header() {
 const [menuOpen, setMenuOpen] = useState(false);
-const [languageOpen, setLanguageOpen] = useState(false);
-const [language, setLanguage] = useState('EN');
-
-const selectedLanguage =
-languages.find((item) => item.code === language) ?? languages[0];
 
 return (
 <header className="fixed left-0 top-0 z-50 w-full bg-forest shadow-lg">
-<div className="flex w-full items-center gap-3 px-3 py-2">
-{/* Logo */}
-<Link href="/" className="shrink-0">
+<div className="mx-auto flex min-h-[76px] w-full max-w-[1600px] items-center px-5 sm:px-6 lg:px-8">
+
+{/* LOGO */}
+<Link
+href="/"
+className="mr-8 flex shrink-0 items-center lg:mr-10"
+>
 <img
 src="/images/logo.png"
 alt="Kilimanjaro Travel"
-className="h-16 w-auto object-contain"
+className="h-14 w-auto object-contain sm:h-16"
 />
 </Link>
 
-{/* Desktop Navigation */}
-<nav className="hidden flex-1 items-center justify-start gap-4 text-sm font-semibold text-white lg:flex">
-{links.map(([label, href]) => {
-const words = label.split(' ');
-
-return (
+{/* DESKTOP NAV */}
+<nav className="hidden min-w-0 flex-1 items-center justify-between gap-3 lg:flex">
+{links.map(([label, href]) => (
 <Link
 key={href}
 href={href}
-className="whitespace-nowrap text-center leading-tight text-white transition hover:text-gold"
+className="
+whitespace-normal
+text-center
+text-[12px]
+font-semibold
+leading-[1.15]
+text-white
+transition-colors
+duration-200
+hover:text-gold
+xl:text-[13px]
+"
 >
-{words.length > 1 ? (
-<>
-{words[0]}
-<br />
-{words.slice(1).join(' ')}
-</>
-) : (
-label
-)}
+{label}
 </Link>
-);
-})}
+))}
 </nav>
 
-{/* Desktop Language Selector */}
-<div className="relative hidden shrink-0 lg:block">
+{/* LANGUAGE */}
+<div className="ml-6 hidden shrink-0 lg:block">
 <button
 type="button"
-onClick={() => setLanguageOpen(!languageOpen)}
-className="flex items-center gap-1 rounded-lg border border-white/30 px-2 py-2 text-sm font-semibold text-white transition hover:bg-white/10"
-aria-label="Select language"
-aria-expanded={languageOpen}
+className="
+rounded-md
+border
+border-white/30
+bg-white/5
+px-3
+py-2
+text-xs
+font-semibold
+text-white
+transition
+hover:bg-white/10
+"
 >
-<span>{selectedLanguage.flag}</span>
-<span>{selectedLanguage.code}</span>
-<span className="text-xs">▾</span>
+🇬🇧 EN
+<span className="ml-1">▾</span>
 </button>
-
-{languageOpen && (
-<div className="absolute right-0 top-full mt-2 w-40 overflow-hidden rounded-lg bg-white shadow-xl">
-{languages.map((item) => (
-<button
-key={item.code}
-type="button"
-onClick={() => {
-setLanguage(item.code);
-setLanguageOpen(false);
-}}
-className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm font-medium text-gray-800 transition hover:bg-gray-100"
->
-<span>{item.flag}</span>
-<span>{item.name}</span>
-</button>
-))}
-</div>
-)}
 </div>
 
-{/* Mobile Menu Button */}
+{/* MOBILE BUTTON */}
 <button
 type="button"
 onClick={() => setMenuOpen(!menuOpen)}
-className="ml-auto rounded-lg px-3 py-2 text-3xl text-white lg:hidden"
+className="
+ml-auto
+rounded-lg
+px-3
+py-2
+text-2xl
+text-white
+lg:hidden
+"
 aria-label={menuOpen ? 'Close menu' : 'Open menu'}
 aria-expanded={menuOpen}
 >
@@ -117,47 +103,48 @@ aria-expanded={menuOpen}
 </button>
 </div>
 
-{/* Mobile Navigation */}
+{/* MOBILE MENU */}
 {menuOpen && (
-<div className="absolute left-0 top-full w-full bg-forest px-6 py-4 shadow-lg lg:hidden">
-<div className="flex max-h-[75vh] flex-col gap-4 overflow-y-auto">
+<div className="border-t border-white/10 bg-forest px-6 py-5 shadow-lg lg:hidden">
+<div className="flex max-h-[75vh] flex-col gap-1 overflow-y-auto">
 {links.map(([label, href]) => (
 <Link
 key={href}
 href={href}
 onClick={() => setMenuOpen(false)}
-className="text-lg font-semibold text-white transition hover:text-gold"
+className="
+rounded-md
+px-3
+py-3
+text-sm
+font-semibold
+text-white
+transition
+hover:bg-white/10
+hover:text-gold
+"
 >
 {label}
 </Link>
 ))}
 
-{/* Mobile Languages */}
-<div className="border-t border-white/20 pt-4">
-<p className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/70">
-Language
-</p>
-
-<div className="grid grid-cols-2 gap-2">
-{languages.map((item) => (
+{/* MOBILE LANGUAGE */}
+<div className="mt-3 border-t border-white/10 pt-4">
 <button
-key={item.code}
 type="button"
-onClick={() => {
-setLanguage(item.code);
-setMenuOpen(false);
-}}
-className={`flex items-center gap-2 rounded-lg px-3 py-2 text-left font-semibold transition ${
-language === item.code
-? 'bg-gold text-white'
-: 'bg-white/10 text-white hover:bg-white/20'
-}`}
+className="
+rounded-md
+border
+border-white/30
+px-4
+py-2
+text-sm
+font-semibold
+text-white
+"
 >
-<span>{item.flag}</span>
-<span>{item.name}</span>
+🇬🇧 EN ▾
 </button>
-))}
-</div>
 </div>
 </div>
 </div>
