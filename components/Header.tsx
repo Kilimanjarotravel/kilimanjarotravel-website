@@ -24,8 +24,8 @@ const [menuOpen, setMenuOpen] = useState(false);
 
 return (
 <header className="fixed left-0 top-0 z-50 w-full bg-forest shadow-lg">
-<div className="flex w-full items-center gap-4 px-4 py-2">
-
+{/* Header Bar */}
+<div className="flex w-full items-center gap-3 px-3 py-2">
 {/* Logo */}
 <Link href="/" className="shrink-0">
 <img
@@ -40,14 +40,14 @@ className="h-16 w-auto object-contain"
 type="button"
 onClick={() => setMenuOpen(!menuOpen)}
 className="ml-auto rounded-lg px-3 py-2 text-3xl text-white lg:hidden"
-aria-label="Open menu"
+aria-label={menuOpen ? 'Close menu' : 'Open menu'}
 aria-expanded={menuOpen}
 >
-☰
+{menuOpen ? '✕' : '☰'}
 </button>
 
 {/* Desktop Navigation */}
-<nav className="hidden flex-1 items-center justify-end gap-5 text-sm font-semibold text-white lg:flex">
+<nav className="hidden flex-1 items-center justify-start gap-4 text-sm font-semibold text-white lg:flex">
 {links.map(([label, href]) => {
 const words = label.split(' ');
 
