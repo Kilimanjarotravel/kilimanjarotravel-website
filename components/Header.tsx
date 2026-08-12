@@ -1,33 +1,36 @@
+'use client';
+
+import * as React from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
 
 const links = [
-['About', '/about'],
-['Safari Packages', '/safari-packages'],
-['Special Safaris', '/safaris'],
-['Kilimanjaro Treks', '/kilimanjaro-treks'],
-['Mountain Adventures', '/mountain-adventures'],
-['Cultural Tours', '/cultural-tours'],
-['Day Trips', '/day-trips'],
-['Testimonials', '/testimonials'],
-['FAQ', '/faq'],
-['Zanzibar', '/zanzibar'],
-['Car Hire', '/car-hire'],
-['Booking', '/booking'],
-['Contact', '/contact'],
+{ label: 'About', href: '/about' },
+{ label: 'Safari Packages', href: '/safari-packages' },
+{ label: 'Special Safaris', href: '/safaris' },
+{ label: 'Kilimanjaro Treks', href: '/kilimanjaro-treks' },
+{ label: 'Mountain Adventures', href: '/mountain-adventures' },
+{ label: 'Cultural Tours', href: '/cultural-tours' },
+{ label: 'Day Trips', href: '/day-trips' },
+{ label: 'Testimonials', href: '/testimonials' },
+{ label: 'FAQ', href: '/faq' },
+{ label: 'Zanzibar', href: '/zanzibar' },
+{ label: 'Car Hire', href: '/car-hire' },
+{ label: 'Booking', href: '/booking' },
+{ label: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
-const [menuOpen, setMenuOpen] = useState(false);
+const [menuOpen, setMenuOpen] = React.useState(false);
 
 return (
 <header className="fixed left-0 top-0 z-50 w-full bg-forest shadow-lg">
-<div className="mx-auto flex min-h-[76px] w-full max-w-[1600px] items-center px-5 sm:px-6 lg:px-8">
+<div className="mx-auto flex min-h-[76px] w-full max-w-[1600px] items-center px-4 sm:px-6 lg:px-8">
 
 {/* LOGO */}
 <Link
 href="/"
-className="mr-8 flex shrink-0 items-center lg:mr-10"
+onClick={() => setMenuOpen(false)}
+className="mr-6 flex shrink-0 items-center lg:mr-8"
 >
 <img
 src="/images/logo.png"
@@ -36,35 +39,39 @@ className="h-14 w-auto object-contain sm:h-16"
 />
 </Link>
 
-{/* DESKTOP NAV */}
-<nav className="hidden min-w-0 flex-1 items-center justify-between gap-3 lg:flex">
-{links.map(([label, href]) => (
+{/* DESKTOP NAVIGATION */}
+<nav className="hidden min-w-0 flex-1 items-center justify-between gap-2 lg:flex">
+{links.map((link) => (
 <Link
-key={href}
-href={href}
+key={link.href}
+href={link.href}
 className="
-whitespace-normal
+px-1
 text-center
-text-[12px]
+text-[11px]
 font-semibold
-leading-[1.15]
+leading-tight
 text-white
 transition-colors
 duration-200
 hover:text-gold
-xl:text-[13px]
+xl:text-xs
+2xl:text-[13px]
 "
 >
-{label}
+{link.label}
 </Link>
 ))}
 </nav>
 
-{/* LANGUAGE */}
-<div className="ml-6 hidden shrink-0 lg:block">
+{/* GERMAN LANGUAGE */}
+<div className="ml-4 hidden shrink-0 lg:block">
 <button
 type="button"
 className="
+flex
+items-center
+gap-1
 rounded-md
 border
 border-white/30
@@ -78,22 +85,27 @@ transition
 hover:bg-white/10
 "
 >
-🇬🇧 EN
-<span className="ml-1">▾</span>
+<span>🇩🇪</span>
+<span>DE</span>
+<span className="text-[10px]">▾</span>
 </button>
 </div>
 
-{/* MOBILE BUTTON */}
+{/* MOBILE MENU BUTTON */}
 <button
 type="button"
-onClick={() => setMenuOpen(!menuOpen)}
+onClick={() => setMenuOpen((current) => !current)}
 className="
 ml-auto
+flex
+h-11
+w-11
+items-center
+justify-center
 rounded-lg
-px-3
-py-2
 text-2xl
 text-white
+hover:bg-white/10
 lg:hidden
 "
 aria-label={menuOpen ? 'Close menu' : 'Open menu'}
@@ -103,17 +115,20 @@ aria-expanded={menuOpen}
 </button>
 </div>
 
-{/* MOBILE MENU */}
+{/* MOBILE NAVIGATION */}
 {menuOpen && (
-<div className="border-t border-white/10 bg-forest px-6 py-5 shadow-lg lg:hidden">
-<div className="flex max-h-[75vh] flex-col gap-1 overflow-y-auto">
-{links.map(([label, href]) => (
+<div className="border-t border-white/10 bg-forest shadow-xl lg:hidden">
+<div className="max-h-[75vh] overflow-y-auto px-5 py-4">
+
+<nav className="flex flex-col">
+{links.map((link) => (
 <Link
-key={href}
-href={href}
+key={link.href}
+href={link.href}
 onClick={() => setMenuOpen(false)}
 className="
-rounded-md
+border-b
+border-white/10
 px-3
 py-3
 text-sm
@@ -124,15 +139,19 @@ hover:bg-white/10
 hover:text-gold
 "
 >
-{label}
+{link.label}
 </Link>
 ))}
+</nav>
 
-{/* MOBILE LANGUAGE */}
-<div className="mt-3 border-t border-white/10 pt-4">
+{/* MOBILE GERMAN LANGUAGE */}
+<div className="mt-4">
 <button
 type="button"
 className="
+flex
+items-center
+gap-2
 rounded-md
 border
 border-white/30
@@ -143,9 +162,12 @@ font-semibold
 text-white
 "
 >
-🇬🇧 EN ▾
+<span>🇩🇪</span>
+<span>DE</span>
+<span className="text-xs">▾</span>
 </button>
 </div>
+
 </div>
 </div>
 )}
