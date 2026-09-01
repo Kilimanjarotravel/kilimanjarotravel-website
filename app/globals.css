@@ -1,4 +1,182 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{scroll-behavior:smooth} body{color:#111;background:#fff}.hero-gradient{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.28))}.btn-gold{@apply inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 font-bold text-white shadow-lg transition hover:bg-forest}.btn-outline{@apply inline-flex items-center justify-center rounded-full border border-white/70 px-7 py-3 font-bold text-white transition hover:bg-white hover:text-forest}.card{@apply overflow-hidden rounded-3xl border border-black/5 bg-white shadow-xl}.section-title{@apply font-display text-4xl font-bold tracking-tight text-forest md:text-5xl}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+body {
+  color: #111;
+  background: #fff;
+  top: 0 !important;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* ================================
+   CUSTOM BUTTONS
+================================ */
+
+.btn-gold {
+  @apply inline-flex items-center justify-center rounded-full bg-gold px-7 py-3 font-bold text-white shadow-lg transition hover:bg-forest;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-white/70 px-7 py-3 font-bold text-white transition hover:bg-white hover:text-forest;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.78),
+    rgba(0, 0, 0, 0.28)
+  );
+}
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+  @apply overflow-hidden rounded-3xl border border-black/5 bg-white shadow-xl;
+}
+
+/* ================================
+   SECTION TITLES
+================================ */
+
+.section-title {
+  @apply font-display text-4xl font-bold tracking-tight text-forest md:text-5xl;
+}
+
+/* ================================
+   GOOGLE TRANSLATE - HIDE UI
+================================ */
+
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.goog-te-menu-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.goog-te-gadget {
+  display: none !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+/* Hide Google's tooltip */
+.goog-tooltip {
+  display: none !important;
+}
+
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+/* Remove Google translation highlight */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-logo-link {
+  display: none !important;
+}
+
+/* ================================
+   GOOGLE TRANSLATE - HIDE ALL UI
+================================ */
+
+/* Hide Google Translate top banner */
+html body .goog-te-banner-frame,
+html body .goog-te-banner-frame.skiptranslate,
+html body iframe.goog-te-banner-frame,
+html body iframe.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: 0 !important;
+}
+
+/* Hide Google Translate floating popup */
+.goog-te-balloon-frame,
+.goog-te-menu-frame,
+#goog-gt-tt,
+.goog-te-spinner-pos {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hide Google Translate gadget */
+.goog-te-gadget,
+.goog-te-gadget-simple,
+.goog-logo-link {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Prevent Google from moving the page down */
+html {
+  top: 0 !important;
+}
+
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Remove Google translation highlight */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Hide Google generated skiptranslate containers */
+body > .skiptranslate,
+body > div.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  min-height: 0 !important;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+}
