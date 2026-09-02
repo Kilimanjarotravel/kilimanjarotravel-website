@@ -67,9 +67,9 @@ description:
 'Discover rare black rhinos, African wild dogs, birdlife, and peaceful savannah landscapes.',
 },
 {
-  title: 'Usambara-Berge & Kultur-Safari',
+  title: 'Usambara Mountains & Cultural Safari',
   description:
-    'Genießen Sie Bergwanderungen, Wasserfälle, Waldwege, Dorfbesuche, lokale Farmen und authentische kulturelle Erlebnisse.',
+    'Enjoy mountain hiking, waterfalls, forest trails, village visits, local farms, and authentic cultural experiences.',
 },
 {
 title: 'Marine Safari, Snorkeling & Diving',
