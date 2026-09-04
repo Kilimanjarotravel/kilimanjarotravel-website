@@ -21,7 +21,7 @@ image: '/images/marangu-five.jpg',
 href: '/kilimanjaro-treks/marangu-route',
 },
 {
-image: '/images/rongai-five.jpg',
+image: '/images/rongai-five.JPG',
 href: '/kilimanjaro-treks/rongai-route',
 },
 {
@@ -29,7 +29,7 @@ image: '/images/northern-five.jpg',
 href: '/kilimanjaro-treks/northern-circuit-route',
 },
 {
-image: '/images/umbwe-five.jpg',
+image: '/images/umbwe-five.JPG',
 href: '/kilimanjaro-treks/umbwe-route',
 },
 {
