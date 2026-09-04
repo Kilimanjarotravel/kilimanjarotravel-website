@@ -427,7 +427,7 @@ min-h-[720px]
 overflow-hidden
 bg-[url('/images/home-main.jpg')]
 bg-cover
-bg-center
+bg-[65%_35%]
 bg-no-repeat
 sm:min-h-[760px]
 md:min-h-screen
