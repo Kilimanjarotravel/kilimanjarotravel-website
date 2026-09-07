@@ -9,9 +9,9 @@ import { useLanguage } from '@/components/LanguageProvider';
 
 const translations = {
 en: {
-heroTitle: 'Tanzania Safari Packages',
+heroTitle: 'Special Safari Experiences',
 heroSubtitle:
-'Choose from our carefully designed safari packages across Northern Tanzania.',
+'Discover unique safari experiences across East Africa, carefully designed for unforgettable wildlife, nature and cultural adventures.',
 sectionTitle: 'Special Safaris',
 explore: 'Explore Adventure',
 
