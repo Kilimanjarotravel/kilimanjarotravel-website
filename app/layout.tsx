@@ -4,9 +4,12 @@ import Script from 'next/script';
 import LanguageProvider from '@/components/LanguageProvider';
 
 export const metadata: Metadata = {
-title: 'Kilimanjaro Travel | See More. Feel More.',
-description:
-'Tanzania safaris, Kilimanjaro treks, Zanzibar holidays, cultural tours and car hire from Arusha.',
+  title: 'Kilimanjaro Travel | See More. Feel More.',
+  description:
+    'Tanzania safaris, Kilimanjaro treks, Zanzibar holidays, cultural tours and car hire from Arusha.',
+  alternates: {
+    canonical: 'https://www.kilimanjarotravel.com/',
+  },
 };
 
 export default function RootLayout({
