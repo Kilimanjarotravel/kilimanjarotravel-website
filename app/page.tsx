@@ -3,6 +3,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsApp from '@/components/WhatsApp';
+import StructuredData from '@/components/StructuredData';
 
 import {
 Car,
@@ -414,10 +415,12 @@ icon: Star,
 ];
 
 return (
-<main className="min-h-screen overflow-x-hidden">
-<Header />
+  <main className="min-h-screen overflow-x-hidden">
+    <StructuredData />
 
-<WhatsApp />
+    <Header />
+
+    <WhatsApp />
 
 {/* HERO */}
 <section
