@@ -214,18 +214,33 @@ export default function Contact() {
             <h2 className="section-title">{t.contactTitle}</h2>
 
             <div className="mt-6 space-y-4 text-lg leading-8">
-              <p>
-                <strong>📱 {t.whatsapp}:</strong> +255 759 273 339
-              </p>
+  <p>
+    <strong>📱 {t.whatsapp}:</strong>{' '}
+    <a href="tel:+255759273339" className="hover:underline">
+      +255 759 273 339
+    </a>
+  </p>
 
-              <p>
-                <strong>📧 {t.email}:</strong>{' '}
-                kilimanjarotravel.tz@gmail.com
-              </p>
+  <p>
+    <strong>☎️ Office:</strong>{' '}
+    <a href="tel:+255272970966" className="hover:underline">
+      +255 27 297 0966
+    </a>
+  </p>
 
-              <p>
-                <strong>📍 {t.location}:</strong> Arusha, Tanzania
-              </p>
+  <p>
+    <strong>📧 {t.email}:</strong>{' '}
+    <a
+      href="mailto:info@kilimanjarotravel.com"
+      className="hover:underline"
+    >
+      info@kilimanjarotravel.com
+    </a>
+  </p>
+
+  <p>
+    <strong>📍 {t.location}:</strong> Arusha, Tanzania
+  </p>
 
               <a
                 href="https://maps.app.goo.gl/oDtj4B18EShgzy5CA?g_st=ic"
