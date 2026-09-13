@@ -263,20 +263,20 @@ export default function Footer() {
           <div className="mt-5 space-y-4 text-white/75">
 
             <a
-              href="tel:+255759273339"
-              className="flex items-start gap-3 transition hover:text-gold"
-            >
-              <Phone className="mt-1 shrink-0 text-gold" size={19} />
-              <span>+255 759 273 339</span>
-            </a>
+  href="tel:+255272970966"
+  className="flex items-start gap-3 transition hover:text-gold"
+>
+  <Phone className="mt-1 shrink-0 text-gold" size={19} />
+  <span>+255 27 297 0966</span>
+</a>
 
             <a
-              href="mailto:kilimanjarotravel.tz@gmail.com"
-              className="flex items-start gap-3 break-all transition hover:text-gold"
-            >
-              <Mail className="mt-1 shrink-0 text-gold" size={19} />
-              <span>kilimanjarotravel.tz@gmail.com</span>
-            </a>
+  href="mailto:info@kilimanjarotravel.com"
+  className="flex items-start gap-3 break-all transition hover:text-gold"
+>
+  <Mail className="mt-1 shrink-0 text-gold" size={19} />
+  <span>info@kilimanjarotravel.com</span>
+</a>
 
             <div className="flex items-start gap-3">
               <MapPin className="mt-1 shrink-0 text-gold" size={19} />
