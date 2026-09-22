@@ -1,6 +1,14 @@
 export async function POST(request: Request) {
 try {
 const body = await request.json();
+const userAgent = request.headers.get('user-agent');
+
+if (!userAgent) {
+  return Response.json(
+    { error: 'Request blocked.' },
+    { status: 403 }
+  );
+}
 
 const {
 name,
